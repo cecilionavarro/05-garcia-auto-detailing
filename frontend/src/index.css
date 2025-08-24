@@ -1,0 +1,142 @@
+@import "tailwindcss";
+
+/* === Custom Theme === */
+@theme {
+  --color-brand: #A52A2A;
+  --color-accent: #FFCA50;
+  --color-accent: #FFCA50;
+  --color-dark: #141413;
+  --color-light: #F1F0E4;
+
+  /* Base families */
+  --font-neue: "NeueMontreal", sans-serif;
+  --font-ppneue: "PPNeueMontreal", sans-serif;
+  --font-ppneue-mono: "PPNeueMontrealMono", sans-serif; /* new */
+
+  /* Defaults: sans = Neue, mono = PP Neue Mono */
+  --font-sans: var(--font-neue);
+  --font-mono: var(--font-ppneue-mono);
+
+  --square-size: 1.2rem;
+}
+
+/* === Neue Montreal (Sans) === */
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-Italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-LightItalic.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-MediumItalic.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeueMontreal";
+  src: url("./assets/fonts/Neue Montreal Font Family/NeueMontreal-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* === PP Neue Montreal (Sans) — optional, keep if you still use it anywhere === */
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/ppneuemontreal-book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/ppneuemontreal-italic.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/ppneuemontreal-medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/ppneuemontreal-bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/ppneuemontreal-thin.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* === PP Neue Montreal Mono (NEW) === */
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/PPNeueMontrealMono-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/PPNeueMontrealMono-Book.otf") format("opentype");
+  font-weight: 400; /* ‘Book’ is a 400-style; keeping same weight is fine */
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/PPNeueMontrealMono-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/PPNeueMontrealMono-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/PPNeueMontrealMono-Thin.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+/* If present in your folder, include italic too */
+@font-face {
+  font-family: "PPNeueMontrealMono";
+  src: url("./assets/fonts/pp-neue-montreal-cufonfonts/PPNeueMontrealMono-BoldItalic.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+}
