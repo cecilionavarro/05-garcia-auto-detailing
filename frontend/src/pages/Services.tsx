@@ -9,7 +9,7 @@ export const Services = () => {
   return (
     <div className="bg-light">
       <PageHeader title="SERVICES" />
-      <Section dark>
+      <Section dark id="interior-exterior-detail">
         <SectionHeader
           title="INTERIOR & EXTERIOR DETAIL"
           label="STARTING AT $249"
@@ -18,7 +18,7 @@ export const Services = () => {
         />
       </Section>
 
-      <Section>
+      <Section id="interior-detail">
         <SectionHeader
           title="INTERIOR DETAIL"
           label="STARTING AT $199"
@@ -26,7 +26,7 @@ export const Services = () => {
         />
       </Section>
 
-      <Section dark>
+      <Section dark id="deep-gloss-enhancement">
         <SectionHeader
           title="DEEP GLOSS ENHANCEMENT"
           label="STARTING AT $249"
@@ -35,7 +35,7 @@ export const Services = () => {
         />
       </Section>
 
-      <Section>
+      <Section id="paint-restoration">
         <SectionHeader
           title="PAINT RESTORATION"
           label="STARTING AT $499"

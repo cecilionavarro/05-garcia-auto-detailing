@@ -1,6 +1,7 @@
 import Icon from "./Icon";
 
 interface SectionHeaderProps {
+  image: string;
   title: string;
   header: string;
   label: string;
@@ -10,6 +11,7 @@ interface SectionHeaderProps {
 }
 
 const SectionHeader2 = ({
+  image,
   title,
   header,
   label,
@@ -21,7 +23,7 @@ const SectionHeader2 = ({
 
   return (
     <div
-      className={`grid grid-cols-5 ${
+      className={`grid grid-cols-5 gap-5 ${
         isDark ? "text-light" : "text-dark"
       }`}
     >
@@ -31,6 +33,7 @@ const SectionHeader2 = ({
           <Icon variant={variant} />
         </div>
       </h1>
+      <img src={image} className="row-start-2 row-span-3 rounded-xl object-cover w-full h-full"></img>
       <h2 className="col-start-3 col-span-full text-3xl pb-10">{header}</h2>
       <h2 className="col-start-3 font-mono font-medium">({label})</h2>
       <p className="col-span-2 text-xl pb-10">{description}</p>

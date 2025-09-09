@@ -17,7 +17,7 @@ const SectionHeader = ({
 
   return (
     <div
-      className={`grid grid-cols-5 ${
+      className={`grid grid-cols-5 gap-5 pb-10 ${
         isDark ? "text-light" : "text-dark"
       }`}
     >

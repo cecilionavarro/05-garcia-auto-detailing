@@ -2,9 +2,10 @@ import type { ReactNode } from "react"
 
 interface Props {
     children: ReactNode;
+    id?: string;
     dark?: boolean;
 }
-const Section = ({children, dark = false}: Props) => {
+const Section = ({children, id, dark = false}: Props) => {
   return (
     <div className={`px-10 py-20 ${dark ? "bg-dark text-light": "bg-light text-dark"}`}>{children}</div>
   )

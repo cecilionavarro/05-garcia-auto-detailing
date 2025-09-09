@@ -5,6 +5,9 @@ import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import SectionHeader2 from "../components/SectionHeader2";
+import headerImage2 from "../assets/IMG_6461.webp";
+import { Link } from "react-router-dom";
+import CallButton from "../components/CallButton";
 
 const About = () => {
   return (
@@ -13,6 +16,7 @@ const About = () => {
 
       <Section dark>
         <SectionHeader2
+          image={headerImage2}
           title="SERVICE, PASSION, GROWTH."
           header="My mission is to deliver exceptional service, top-quality results, and complete honesty—treating every vehicle like my own and ensuring customers always get true value."
           label="MY STORY"
@@ -59,9 +63,23 @@ const About = () => {
           <h2 className="font-bold text-5xl">VISION FOR THE</h2>
           <h1 className="relative font-bold text-[12rem]">
             <span className="relative text-accent">FUTURE</span>
-            <span className="aria-hidden absolute inset-0 text-brand translate-x-2">FUTURE</span>
-            <span className="aria-hidden absolute inset-0 text-dark translate-x-4">FUTURE</span>
+            <span className="aria-hidden absolute inset-0 text-brand translate-x-2">
+              FUTURE
+            </span>
+            <span className="aria-hidden absolute inset-0 text-dark translate-x-4">
+              FUTURE
+            </span>
           </h1>
+          <div className="leading-normal flex flex-col gap-10">
+            <p className="text-xl">
+              I'm proud to serve Bakersfield, but my vision is to grow—opening a
+              dedicated shop, expanding services to include wraps and tint, and
+              helping even more people enjoy their vehicles. Until then, I'll keep
+              doing what I do best: delivering high-quality, professional
+              detailing right to your door.
+            </p>
+            <CallButton/>
+          </div>
         </div>
       </Section>
 
