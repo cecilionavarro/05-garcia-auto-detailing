@@ -19,9 +19,9 @@ const Card = ({ title, label, price, description, image, slug }: CardProps) => {
       ></img>
       <div>
         <h1 className="font-bold text-4xl">{title}</h1>
-        {label && <p className="text-xl font-mono text-[#a48850]">{label}</p>}
+        {label && <p className="text-lg font-mono font-medium text-[#a48850]">{label}</p>}
         {price && (
-          <p className="text-xl font-mono text-accent">Starting at ${price}</p>
+          <p className="text-lg font-mono text-accent">Starting at ${price}</p>
         )}
       </div>
       <p className="text-xl">{description}</p>

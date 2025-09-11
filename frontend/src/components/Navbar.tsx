@@ -5,7 +5,7 @@ import CallButton from "./CallButton";
 export const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 z-2 w-full px-10 ">
-      <div className="flex items-center relative h-20 ">
+      <div className="flex items-center relative h-20 index-1">
         <Link to="/" className="h-13 absolute">
           <img
             src={myLogo}

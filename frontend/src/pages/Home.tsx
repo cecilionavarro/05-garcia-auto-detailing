@@ -129,7 +129,7 @@ export const benefits = [
 ];
 
 const Home = () => (
-  <div>
+  <div className="bg-light">
     <div className="relative h-[80vh] w-full overflow-hidden">
       <img
         src={Hero}
@@ -163,7 +163,7 @@ const Home = () => (
         label="BENEFITS"
         description="When you choose my services, you get more than just a clean car—you get expert care, attention to detail, and results that last. Using professional-grade products and proven techniques, I make sure your vehicle not only looks amazing but is also protected for the long run."
       />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-3 gap-5">
         {benefits.map((benefits) => (
           <Card key={benefits.title} {...benefits} />
         ))}
@@ -197,7 +197,7 @@ const Home = () => (
         description="Tired of spending money on car washes that barely make a difference? I provide premium mobile detailing that eliminates swirl marks, restores shine, protects your paint, and leaves every inch of your car looking brand new."
         variant="dark"
       />
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-3 gap-5">
         {services.map((service) => (
           <Card key={service.slug} {...service} />
         ))}
@@ -216,7 +216,7 @@ const Home = () => (
         variant="dark"
       />
 
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid grid-cols-3 gap-5">
         {reviews.map(({ review, name }, i) => (
           <div
             key={i}

@@ -7,7 +7,7 @@ interface Props {
 }
 const Section = ({children, id, dark = false}: Props) => {
   return (
-    <div className={`px-10 py-20 ${dark ? "bg-dark text-light": "bg-light text-dark"}`}>{children}</div>
+    <div data-header-theme={dark ? "dark" : "light"} id={id} className={`px-10 py-20 ${dark ? "bg-dark text-light": "bg-light text-dark"}`}>{children}</div>
   )
 }
 
