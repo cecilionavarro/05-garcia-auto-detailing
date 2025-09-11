@@ -6,7 +6,6 @@ import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import SectionHeader2 from "../components/SectionHeader2";
 import headerImage2 from "../assets/IMG_6461.webp";
-import { Link } from "react-router-dom";
 import CallButton from "../components/CallButton";
 
 const About = () => {
