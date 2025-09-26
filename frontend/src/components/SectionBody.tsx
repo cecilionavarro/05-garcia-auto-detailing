@@ -1,4 +1,3 @@
-import CallButton from "./CallButton";
 
 export interface ServiceGroup {
   title: string;
