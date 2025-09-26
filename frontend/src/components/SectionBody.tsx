@@ -57,9 +57,6 @@ const SectionBody = ({ image1, image2, sections }: Section) => {
           </p>
         </div>
       )}
-      {/* <div className="flex flex-row col-start-1 text-lg">
-          <CallButton />
-        </div> */}
     </div>
   );
 };

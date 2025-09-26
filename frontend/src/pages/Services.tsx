@@ -9,8 +9,6 @@ import img1 from "../assets/IMG_9907.webp"
 import img2 from "../assets/IMG_1725.webp"
 import img3 from "../assets/IMG_5763 copy.webp"
 import img4 from "../assets/IMG_0250.webp"
-import img5 from "../assets/IMG_9925.webp"
-import img6 from "../assets/IMG_9926-2.webp"
 import img7 from "../assets/IMG_1549.webp"
 import img8 from "../assets/IMG_6871 copy.webp"
 

@@ -14,13 +14,9 @@ import imgExpertise from "../assets/benefits/IMG_6871.webp";
 import cta1 from "../assets/cta/IMG_5763.webp";
 import cta2 from "../assets/cta/IMG_0478.webp";
 import cta3 from "../assets/cta/IMG_1723.webp";
-import cta4 from "../assets/cta/IMG_7798.webp";
 import img1 from "../assets/services/IMG_1480.webp";
 import img2 from "../assets/services/IMG_7818.webp";
-import img3 from "../assets/services/IMG_0579.webp";
 import img4 from "../assets/services/IMG_6871.webp";
-import membership1 from "../assets/IMG_0250.webp"
-import membership2 from "../assets/IMG_9925.webp"
 import BMWLogo from "../assets/car-logos/BMW.svg";
 import CorvetteLogo from "../assets/car-logos/Logo_Corvette_-Transparency.png";
 import MercedesLogo from "../assets/car-logos/Mercedes-Benz_Star.svg";
@@ -299,8 +295,6 @@ const Home = () => (
 
     <Section>
       <SectionHeader2
-        image={membership1}
-        image2={membership2}
         title="MAINTAIN, PROTECT, IMPRESS"
         header="Keep your vehicle looking its best year-round with regular detailing. Consistent care not only protects your investment but also turns heads wherever you go."
         label="MEMBERSHIP"

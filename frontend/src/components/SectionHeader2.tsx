@@ -1,8 +1,6 @@
 import Icon from "./Icon";
 
 interface SectionHeaderProps {
-  image: string;
-  image2: string;
   title: string;
   header: string;
   label: string;
@@ -12,8 +10,6 @@ interface SectionHeaderProps {
 }
 
 const SectionHeader2 = ({
-  image,
-  image2,
   title,
   header,
   label,
