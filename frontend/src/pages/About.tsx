@@ -6,6 +6,7 @@ import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import SectionHeader2 from "../components/SectionHeader2";
 import headerImage2 from "../assets/IMG_6461.webp";
+import headerImage3 from "../assets/IMG_0584.webp";
 import CallButton from "../components/CallButton";
 
 const About = () => {
@@ -16,6 +17,7 @@ const About = () => {
       <Section dark>
         <SectionHeader2
           image={headerImage2}
+          image2={headerImage3}
           title="SERVICE, PASSION, GROWTH."
           header="My mission is to deliver exceptional service, top-quality results, and complete honesty—treating every vehicle like my own and ensuring customers always get true value."
           label="MY STORY"

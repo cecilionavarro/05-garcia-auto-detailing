@@ -14,16 +14,19 @@ import imgExpertise from "../assets/benefits/IMG_6871.webp";
 import cta1 from "../assets/cta/IMG_5763.webp";
 import cta2 from "../assets/cta/IMG_0478.webp";
 import cta3 from "../assets/cta/IMG_1723.webp";
+import cta4 from "../assets/cta/IMG_7798.webp";
 import img1 from "../assets/services/IMG_1480.webp";
 import img2 from "../assets/services/IMG_7818.webp";
 import img3 from "../assets/services/IMG_0579.webp";
 import img4 from "../assets/services/IMG_6871.webp";
 import membership1 from "../assets/IMG_0250.webp"
+import membership2 from "../assets/IMG_9925.webp"
 import BMWLogo from "../assets/car-logos/BMW.svg";
 import CorvetteLogo from "../assets/car-logos/Logo_Corvette_-Transparency.png";
 import MercedesLogo from "../assets/car-logos/Mercedes-Benz_Star.svg";
 import PorscheLogo from "../assets/car-logos/Porsche_Logo.svg.png";
 import LexusLogo from "../assets/car-logos/lexus_logo.svg.png";
+import TelsaLogo from "../assets/car-logos/tesla_logo.svg.png";
 import process1 from "../assets/IMG_4045.webp"
 import process2 from "../assets/IMG_4651.webp"
 
@@ -79,20 +82,12 @@ const services = [
     slug: "interior-exterior-detail",
   },
   {
-    title: "Interior Detail",
+    title: "Interior Only Detail",
     price: 199,
     description:
       "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
     image: img2,
     slug: "interior-detail",
-  },
-  {
-    title: "Deep Gloss Enhancement",
-    price: 249,
-    description:
-      "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
-    image: img3,
-    slug: "deep-gloss-enhancement",
   },
   {
     title: "Paint Restoration",
@@ -130,12 +125,13 @@ export const benefits = [
 
 const Home = () => (
   <div className="bg-light">
-    <div className="relative h-[80vh] w-full overflow-hidden">
+    <div className="relative h-[80vh] w-full">
       <img
         src={Hero}
         alt="car interior"
         className="absolute h-full w-full object-cover"
       />
+      {/* <div className="relative z-1 grid grid-cols-[1fr_2fr] h-full bg-black/40 px-10 py-20"> */}
       <div className="relative z-1 grid grid-cols-[1fr_2fr] h-full bg-black/40 px-10 py-20">
         <div className="flex flex-col justify-end text-light">
           <h2 className="text-xxl font-mono font-medium">
@@ -190,6 +186,7 @@ const Home = () => (
       </div>
     </Section>
 
+    <div className="rounded-t-full w-full h-10 bg-dark"></div>
     <Section dark>
       <SectionHeader
         title="HOW I CAN HELP"
@@ -220,7 +217,7 @@ const Home = () => (
         {reviews.map(({ review, name }, i) => (
           <div
             key={i}
-            className="flex flex-col justify-between gap-10 text-xl text-light backdrop-blur-lg p-5 rounded-xl border border-light"
+            className="flex flex-col justify-between gap-10 min-h-80 h-auto text-xl text-light backdrop-blur-lg p-5 rounded-xl border border-light"
           >
             <p>{review}</p>
             <div className="flex justify-between">
@@ -243,8 +240,9 @@ const Home = () => (
         <img src={PorscheLogo} alt="Porsche" className="h-20" />
         <img src={MercedesLogo} alt="Mercedes-Benz" className="h-20" />
         <img src={CorvetteLogo} alt="Corvette" className="h-20" />
-        <img src={BMWLogo} alt="BMW" className="h-20" />
         <img src={LexusLogo} alt="Lexus" className="h-20" />
+        <img src={BMWLogo} alt="BMW" className="h-20" />
+        <img src={TelsaLogo} alt="Tesla" className="h-20" />
       </div>
     </Section>
 
@@ -258,21 +256,26 @@ const Home = () => (
             BOOK YOUR DETAIL
           </h1>
 
-          <div className="grid grid-cols-5 gap-5">
+          <div className="grid grid-cols-6 gap-5">
             <img
               src={cta1}
               alt="Detailing example 1"
-              className="col-span-2 h-100 w-full object-cover rounded-xl"
+              className="col-span-2 h-90 w-full object-cover rounded-xl"
             />
             <img
               src={cta2}
               alt="Detailing example 2"
-              className="h-100 w-full object-cover rounded-xl"
+              className="col-span-2 h-90 w-full object-cover rounded-xl"
             />
+              {/* <img
+                src={cta4}
+                alt="Detailing example 3"
+                className="h-100 w-full object-cover rounded-xl"
+              /> */}
             <img
               src={cta3}
               alt="Detailing example 3"
-              className=" col-span-2 h-100 w-full object-cover rounded-xl"
+              className=" col-span-2 h-90 w-full object-cover rounded-xl"
             />
           </div>
         </div>
@@ -292,10 +295,12 @@ const Home = () => (
         image2={process2}
       />
     </Section>
+    <div className="rounded-b-full w-full h-10 bg-dark"></div>
 
     <Section>
       <SectionHeader2
         image={membership1}
+        image2={membership2}
         title="MAINTAIN, PROTECT, IMPRESS"
         header="Keep your vehicle looking its best year-round with regular detailing. Consistent care not only protects your investment but also turns heads wherever you go."
         label="MEMBERSHIP"

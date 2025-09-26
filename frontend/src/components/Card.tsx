@@ -13,12 +13,12 @@ const Card = ({ title, label, price, description, image, slug }: CardProps) => {
   return (
     <div key={slug} className="flex flex-col gap-5">
       <img
-        className="object-cover w-full aspect-[2/1] rounded-xl"
+        className="object-cover w-full h-100 rounded-xl"
         src={image}
         alt={title}
       ></img>
       <div>
-        <h1 className="font-bold text-4xl">{title}</h1>
+        <h1 className="font-medium text-4xl">{title}</h1>
         {label && <p className="text-lg font-mono font-medium text-[#a48850]">{label}</p>}
         {price && (
           <p className="text-lg font-mono text-accent">Starting at ${price}</p>

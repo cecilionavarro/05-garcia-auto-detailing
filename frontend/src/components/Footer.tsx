@@ -14,6 +14,41 @@ const Footer = () => {
           661 862 2372
         </a>
         <a href="mailto:garciadetails84@gmail.com" className="hover:text-accent">garciadetails84@gmail.com</a>
+        <div className="ml-5 flex">
+          <a
+            href="https://www.linkedin.com/in/garcia-auto-detailing-6a8316323/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              className="text-5xl hover:text-accent"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/garcia.auto.detailing/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <FontAwesomeIcon
+              icon={faSquareInstagram}
+              className="text-5xl hover:text-accent"
+            />
+          </a>
+          <a
+            href="https://nextdoor.com/pages/garcia-auto-detailing-bakersfield-ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
+            <FontAwesomeIcon
+              icon={faSquareFacebook}
+              className="text-5xl hover:text-accent"
+            />
+          </a>
+        </div>
       </div>
       <div className="flex flex-col gap-4">
         <h3 className="font-bold border-b pb-2">MENU</h3>
@@ -51,44 +86,9 @@ const Footer = () => {
       </div>
       <div className="col-span-full flex flex-row items-center justify-center pt-20">
         <Icon />
-        <h1 className="ml-5 font-bold text-8xl">
+        <h1 className="ml-5 font-bold text-[6.8svw]">
           &copy; 2025 Garcia Auto Detailing
         </h1>
-        <div className="ml-5 flex">
-          <a
-            href="https://www.linkedin.com/in/garcia-auto-detailing-6a8316323/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-5xl hover:text-accent"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/garcia.auto.detailing/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-          >
-            <FontAwesomeIcon
-              icon={faSquareInstagram}
-              className="text-5xl hover:text-accent"
-            />
-          </a>
-          <a
-            href="https://nextdoor.com/pages/garcia-auto-detailing-bakersfield-ca/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Facebook"
-          >
-            <FontAwesomeIcon
-              icon={faSquareFacebook}
-              className="text-5xl hover:text-accent"
-            />
-          </a>
-        </div>
       </div>
     </div>
   );
