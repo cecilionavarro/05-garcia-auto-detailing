@@ -23,8 +23,8 @@ import MercedesLogo from "../assets/car-logos/Mercedes-Benz_Star.svg";
 import PorscheLogo from "../assets/car-logos/Porsche_Logo.svg.png";
 import LexusLogo from "../assets/car-logos/lexus_logo.svg.png";
 import TelsaLogo from "../assets/car-logos/tesla_logo.svg.png";
-import process1 from "../assets/IMG_4045.webp"
-import process2 from "../assets/IMG_4651.webp"
+import process1 from "../assets/IMG_4045.webp";
+import process2 from "../assets/IMG_4651.webp";
 
 import Card from "../components/Card";
 import CallButton from "../components/CallButton";
@@ -127,24 +127,33 @@ const Home = () => (
         alt="car interior"
         className="absolute h-full w-full object-cover"
       />
-      {/* <div className="relative z-1 grid grid-cols-[1fr_2fr] h-full bg-black/40 px-10 py-20"> */}
-      <div className="relative z-1 grid grid-cols-[1fr_2fr] h-full bg-black/40 px-10 py-20">
-        <div className="flex flex-col justify-end text-light">
-          <h2 className="text-xxl font-mono font-medium">
+      <div className="relative z-1 text-light flex flex-col h-full justify-end px-5 py-10 bg-black/40 md:px-10 md:py-20 lg:grid lg:grid-cols-2">
+        <div className="lg:flex lg:flex-col lg:justify-end">
+          <h2 className="font-mono font-medium md:text-xl">
             IT'S ALL IN THE DETAILS
           </h2>
-          <h1 className="text-9xl font-bold">
-            GARCIA AUTO DETAILING
-            <span className="text-5xl align-top relative top-3.5">&copy;</span>
+          <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">GARCIA</h1>
+          <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">AUTO</h1>
+          <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">
+            DETAILING
+            <span className="text-2xl align-top relative top-1.4 md:text-4xl md:top-1.5 lg:text-5xl">
+              &copy;
+            </span>
           </h1>
         </div>
-        <div className="flex flex-col justify-end text-right text-light">
-          <h2 className="font-mono font-medium">
-            AVAILABLE FOR MOBILE AUTO DETAILING WORK
+        <div className="pt-5 lg:flex lg:flex-col lg:justify-end lg:text-right">
+          <h2 className="font-mono font-medium block md:hidden">
+            AVAILABLE FOR MOBILE DETAILING
           </h2>
-          <h1 className="text-6xl font-bold whitespace-nowrap">
+          <h2 className="font-mono font-medium hidden md:block md:text-xl">
+            AVAILABLE FOR MOBILE DETAILING WORK
+          </h2>
+          <h1 className="text-4xl font-bold md:text-5xl xl:text-6xl">
             BAKERSFIELD, CA
           </h1>
+        </div>
+        <div className="pt-5 block lg:hidden">
+          <CallButton />
         </div>
       </div>
     </div>
@@ -263,7 +272,7 @@ const Home = () => (
               alt="Detailing example 2"
               className="col-span-2 h-90 w-full object-cover rounded-xl"
             />
-              {/* <img
+            {/* <img
                 src={cta4}
                 alt="Detailing example 3"
                 className="h-100 w-full object-cover rounded-xl"
@@ -286,10 +295,7 @@ const Home = () => (
         description="I follow a simple, step-by-step process designed to give your vehicle the best results. From the initial inspection to the final touch, every stage is handled with care, using proven techniques and professional products to clean, restore, and protect your ride."
         variant="dark"
       />
-      <SectionBody
-        image1={process1}
-        image2={process2}
-      />
+      <SectionBody image1={process1} image2={process2} />
     </Section>
     <div className="rounded-b-full w-full h-10 bg-dark"></div>
 
