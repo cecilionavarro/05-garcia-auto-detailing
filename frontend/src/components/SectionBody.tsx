@@ -12,19 +12,19 @@ interface Section {
 
 const SectionBody = ({ image1, image2, sections }: Section) => {
   return (
-    <div className="grid grid-cols-6 grid-rows-[auto_auto_auto] items-start gap-5">
+    <div className="grid grid-rows-[auto_auto_auto] items-start gap-5 md:grid-cols-6">
       <img
-        className="col-span-2 h-100 w-full object-cover rounded-xl"
+        className="col-span-2 h-50 w-full object-cover rounded-xl md:h-80"
         src={image2}
         alt=""
       />
       <img
-        className="col-span-2 h-100 w-full object-cover rounded-xl"
+        className="col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
         src={image1}
         alt=""
       />
       <img
-        className="col-span-2 h-100 w-full object-cover rounded-xl"
+        className="col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
         src={image2}
         alt=""
       />
@@ -40,7 +40,7 @@ const SectionBody = ({ image1, image2, sections }: Section) => {
         </div>
       ))}
       {!sections && (
-        <div className="col-span-full text-xl">
+        <div className="col-span-2 md:col-span-full md:text-xl">
           <p>
             I make detailing simple and hassle-free. Most appointments take 2-4
             hours, depending on the service and vehicle size. I arrive fully

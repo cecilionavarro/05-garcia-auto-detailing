@@ -30,7 +30,7 @@ const SectionHeader = ({
     //   <h2 className="col-span-2 font-mono font-medium text-3xl">({label})</h2>
     //   <p className="col-span-2 text-xl col-span-4">{description}</p>
     // </div>
-    <div className={`grid gap-5 pb-5 ${isDark ? "text-light" : "text-dark"} md:grid-cols-6 md:pb-10 md:gap-10`}>
+    <div className={`grid gap-5 pb-10 ${isDark ? "text-light" : "text-dark"} md:grid-cols-6 md:pb-10 md:gap-10`}>
       <h1 className="flex items-center font-bold text-5xl md:col-span-full md:text-7xl">
         {title}
         <div className="flex align-middle ml-5 hidden md:block">

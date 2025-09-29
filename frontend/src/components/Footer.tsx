@@ -7,14 +7,14 @@ import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons/faSquareIn
 
 const Footer = () => {
   return (
-    <div className="grid grid-cols-5 px-10 py-20 gap-4">
-      <div className="flex flex-col gap-4 col-span-3">
+    <div className="grid grid-cols-6 px-5 py-10 md:px-10 md:py-20 gap-5">
+      <div className="flex flex-col gap-5 col-span-4 md:col-span-2">
         <h3 className="font-bold border-b pb-2">INFORMATION</h3>
         <a href="tel:+15551234567" className="hover:text-accent">
           661 862 2372
         </a>
         <a href="mailto:garciadetails84@gmail.com" className="hover:text-accent">garciadetails84@gmail.com</a>
-        <div className="ml-5 flex">
+        <div className="-ml-2 flex">
           <a
             href="https://www.linkedin.com/in/garcia-auto-detailing-6a8316323/"
             target="_blank"
@@ -50,7 +50,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-5 col-span-2 md:col-span-2">
         <h3 className="font-bold border-b pb-2">MENU</h3>
         <Link to="/" className="hover:text-accent">
           Home
@@ -65,23 +65,23 @@ const Footer = () => {
           Contact
         </Link>
       </div>
-      <div className="flex flex-col gap-4">
-        <h3 className="font-bold border-b pb-2">MENU</h3>
-        <div className="grid grid-cols-[auto_auto] gap-x-10">
+      <div className="flex flex-col gap-5 col-span-6 md:col-span-2">
+        <h3 className="font-bold border-b pb-2">HOURS</h3>
+        <div className="grid grid-cols-3 gap-5">
           <p>Monday</p>
-          <p>6 am - 8 pm</p>
+          <p className="col-span-2">6 am - 8 pm</p>
           <p>Tuesday</p>
-          <p>6 am - 8 pm</p>
+          <p className="col-span-2">6 am - 8 pm</p>
           <p>Wednesday</p>
-          <p>6 am - 6 pm</p>
+          <p className="col-span-2">6 am - 6 pm</p>
           <p>Thursday</p>
-          <p>6 am - 6 pm</p>
+          <p className="col-span-2">6 am - 6 pm</p>
           <p>Friday</p>
-          <p>6 am - 6 pm</p>
+          <p className="col-span-2">6 am - 6 pm</p>
           <p>Saturday</p>
-          <p>6 am - 8 pm</p>
+          <p className="col-span-2">6 am - 8 pm</p>
           <p>Sunday</p>
-          <p>Closed</p>
+          <p className="col-span-2">Closed</p>
         </div>
       </div>
       <div className="col-span-full flex flex-row items-center justify-center pt-20">

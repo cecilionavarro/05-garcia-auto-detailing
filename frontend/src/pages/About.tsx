@@ -25,8 +25,8 @@ const About = () => {
 
       <Section dark>
         <div className="leading-none flex justify-between">
-          <h1 className="font-bold text-[12rem]">EST.</h1>
-          <h1 className="font-bold text-[12rem]">‘20</h1>
+          <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">EST.</h1>
+          <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">‘20</h1>
         </div>
         <SectionHeader
           title="WHAT MAKES ME DIFFERENT"
@@ -38,17 +38,17 @@ const About = () => {
 
       <Section dark>
         <div className="flex flex-col gap-5">
-          <h2 className="font-bold text-5xl">
+          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Quality</span> — No corners cut.
           </h2>
-          <h2 className="font-bold text-5xl">
+          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Convenience</span> — I come to you.
           </h2>
-          <h2 className="font-bold text-5xl">
+          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Experience</span> — Any vehicle, any
             challenge.
           </h2>
-          <h2 className="font-bold text-5xl">
+          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Satisfaction</span> — You'll smile
             when it's done.
           </h2>

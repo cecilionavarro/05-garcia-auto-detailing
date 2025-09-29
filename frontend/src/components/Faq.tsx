@@ -65,7 +65,8 @@ const Faq = () => {
     setOpenId(openId === item ? null : item)
   };
   return (
-    <div className="px-10 pt-10 grid grid-cols-6">
+    // <div className="px-10 pt-10 grid grid-cols-6">
+    <div className="grid md:grid-cols-6 md:px-10 md:pt-10">
       {data.map((item: FaqItem) => {
         return (
           <Question

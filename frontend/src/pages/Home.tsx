@@ -70,7 +70,7 @@ const reviews: CardItem[] = [
 
 const services = [
   {
-    title: "Interior & Exterior Detail",
+    title: "INTERIOR & EXTERIOR DETAIL",
     price: 249,
     description:
       "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
@@ -78,7 +78,7 @@ const services = [
     slug: "interior-exterior-detail",
   },
   {
-    title: "Interior Only Detail",
+    title: "INTERIOR ONLY DETAIL",
     price: 199,
     description:
       "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
@@ -86,7 +86,7 @@ const services = [
     slug: "interior-detail",
   },
   {
-    title: "Paint Restoration",
+    title: "PAINT RESTORATION",
     price: 499,
     description:
       "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
@@ -97,22 +97,22 @@ const services = [
 
 export const benefits = [
   {
-    title: "Convenience",
-    label: "Mobile Detailing",
+    title: "CONVENIENCE",
+    label: "MOBILE DETAILING",
     description:
       "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
     image: imgConvenience,
   },
   {
-    title: "My Guarantee",
-    label: "Satisfaction Promise",
+    title: "MY GUARANTEE",
+    label: "SATISFACTION PROMISE",
     description:
       "I will not leave until you're happy. If something's not perfect, I'll fix it right there before handing back your keys.",
     image: imgGuarantee,
   },
   {
-    title: "Expertise",
-    label: "All Vehicle Types",
+    title: "EXPERTISE",
+    label: "ALL VEHICLE TYPES",
     description:
       "From luxury cars and classics to trucks, RVs, boats, and motorcycles, I've detailed them all — and we know exactly where dirt hides.",
     image: imgExpertise,
@@ -164,7 +164,12 @@ const Home = () => (
         label="BENEFITS"
         description="When you choose my services, you get more than just a clean car—you get expert care, attention to detail, and results that last. Using professional-grade products and proven techniques, I make sure your vehicle not only looks amazing but is also protected for the long run."
       />
-      <div className="grid grid-cols-3 gap-5">
+      {/* <div className="grid grid-cols-3 gap-5">
+        {benefits.map((benefits) => (
+          <Card key={benefits.title} {...benefits} />
+        ))}
+      </div> */}
+      <div className="grid gap-10 md:gap-5 md:grid-cols-3">
         {benefits.map((benefits) => (
           <Card key={benefits.title} {...benefits} />
         ))}
@@ -172,7 +177,7 @@ const Home = () => (
     </Section>
 
     <Section>
-      <div className="leading-none flex flex-col">
+      {/* <div className="leading-none flex flex-col">
         <h2 className="font-bold text-5xl">MOBILE DETAILING IN</h2>
         <div className="flex justify-between">
           <p className="text-[12rem]">→</p>
@@ -188,6 +193,23 @@ const Home = () => (
             </span>
           </h1>
         </div>
+      </div> */}
+      <div>
+        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">MOBILE DETAILING IN</h2>
+        <div className="flex justify-between">
+          <p className="text-6xl md:text-8xl lg:text-[12rem]">→</p>
+          <h1 className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]">
+            <span className="relative text-accent">
+              <em>MOTION</em>
+            </span>
+            <span className="aria-hidden absolute inset-0 text-brand translate-x-1 lg:translate-x-2">
+              <em>MOTION</em>
+            </span>
+            <span className="aria-hidden absolute inset-0 text-dark translate-x-2 lg:translate-x-4">
+              <em>MOTION</em>
+            </span>
+          </h1>
+        </div>
       </div>
     </Section>
 
@@ -199,7 +221,7 @@ const Home = () => (
         description="Tired of spending money on car washes that barely make a difference? I provide premium mobile detailing that eliminates swirl marks, restores shine, protects your paint, and leaves every inch of your car looking brand new."
         variant="dark"
       />
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid gap-10 md:gap-5 md:grid-cols-3">
         {services.map((service) => (
           <Card key={service.slug} {...service} />
         ))}
@@ -207,9 +229,13 @@ const Home = () => (
     </Section>
 
     <Section dark>
-      <div className="leading-none flex justify-between">
+      {/* <div className="leading-none flex justify-between">
         <h1 className="font-bold text-[12rem]">5</h1>
         <h1 className="font-bold text-[12rem] text-accent">STARS</h1>
+      </div> */}
+      <div className="leading-none flex justify-between">
+        <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">5</h1>
+        <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem] text-accent">STARS</h1>
       </div>
       <SectionHeader
         title="DON'T TAKE MY WORD FOR IT"
@@ -218,11 +244,11 @@ const Home = () => (
         variant="dark"
       />
 
-      <div className="grid grid-cols-3 gap-5">
+      <div className="grid md:grid-cols-3 gap-5">
         {reviews.map(({ review, name }, i) => (
           <div
             key={i}
-            className="flex flex-col justify-between gap-10 min-h-80 h-auto text-xl text-light backdrop-blur-lg p-5 rounded-xl border border-light"
+            className="flex flex-col justify-between gap-10 min-h-80 h-auto md:text-xl text-light backdrop-blur-lg p-5 rounded-xl border border-light"
           >
             <p>{review}</p>
             <div className="flex justify-between">
@@ -241,36 +267,36 @@ const Home = () => (
     </Section>
 
     <Section dark>
-      <div className="flex items-center justify-between">
+      <div className="grid grid-cols-3 items-center justify-items-center gap-10 md:grid-cols-6">
         <img src={PorscheLogo} alt="Porsche" className="h-20" />
         <img src={MercedesLogo} alt="Mercedes-Benz" className="h-20" />
         <img src={CorvetteLogo} alt="Corvette" className="h-20" />
         <img src={LexusLogo} alt="Lexus" className="h-20" />
         <img src={BMWLogo} alt="BMW" className="h-20" />
-        <img src={TelsaLogo} alt="Tesla" className="h-20" />
+        <img src={TelsaLogo} alt="Tesla" className="h-20 " />
       </div>
     </Section>
 
     <Section dark>
       <div className="h-full flex flex-col items-center justify-center gap-20">
         <div className="flex flex-col items-center gap-10">
-          <h2 className="text-light font-mono">
+          <h2 className="text-light font-mono font-medium md:text-xl">
             (Because Every Detail Matters)
           </h2>
-          <h1 className="text-light font-bold text-9xl text-center">
+          <h1 className="text-light font-bold text-center text-6xl md:text-8xl lg:text-9xl">
             BOOK YOUR DETAIL
           </h1>
 
-          <div className="grid grid-cols-6 gap-5">
+          <div className="grid md:grid-cols-6 gap-5">
             <img
               src={cta1}
               alt="Detailing example 1"
-              className="col-span-2 h-90 w-full object-cover rounded-xl"
+              className="col-span-2 h-50 w-full object-cover rounded-xl md:h-80"
             />
             <img
               src={cta2}
               alt="Detailing example 2"
-              className="col-span-2 h-90 w-full object-cover rounded-xl"
+              className="col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
             />
             {/* <img
                 src={cta4}
@@ -280,7 +306,7 @@ const Home = () => (
             <img
               src={cta3}
               alt="Detailing example 3"
-              className=" col-span-2 h-90 w-full object-cover rounded-xl"
+              className=" col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
             />
           </div>
         </div>
