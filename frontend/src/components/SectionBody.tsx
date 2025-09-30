@@ -7,34 +7,35 @@ export interface ServiceGroup {
 interface Section {
   image1: string;
   image2: string;
+  image3: string;
   sections?: ServiceGroup[];
 }
 
-const SectionBody = ({ image1, image2, sections }: Section) => {
+const SectionBody = ({ image1, image2, image3, sections }: Section) => {
   return (
     <div className="grid grid-rows-[auto_auto_auto] items-start gap-5 md:grid-cols-6">
       <img
-        className="col-span-2 h-50 w-full object-cover rounded-xl md:h-80"
+        className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl md:h-80"
         src={image2}
         alt=""
       />
       <img
-        className="col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
+        className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
         src={image1}
         alt=""
       />
       <img
-        className="col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
-        src={image2}
+        className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
+        src={image3}
         alt=""
       />
 
       {sections?.map((sec) => (
         <div key={sec.title} className="col-span-2">
-          <h1 className="text-4xl font-medium pb-5 font-bold">{sec.title}</h1>
+          <h1 className="text-3xl font-bold pb-5">{sec.title}</h1>
           {sec.items.map((item, i) => (
             <div key={i} className="grid grid-cols-3 pb-1">
-              <h2 className="col-span-full text-xl">{item}</h2>
+              <h2 className="col-span-full md:text-xl">— {item}</h2>
             </div>
           ))}
         </div>

@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import imgConvenience from "../assets/benefits/IMG_1101.webp";
 import imgGuarantee from "../assets/benefits/IMG_0172.webp";
-import imgExpertise from "../assets/benefits/IMG_6871.webp";
+import imgExpertise from "../assets/benefits/IMG_0283.webp";
 import cta1 from "../assets/cta/IMG_5763.webp";
 import cta2 from "../assets/cta/IMG_0478.webp";
 import cta3 from "../assets/cta/IMG_1723.webp";
@@ -25,6 +25,9 @@ import LexusLogo from "../assets/car-logos/lexus_logo.svg.png";
 import TelsaLogo from "../assets/car-logos/tesla_logo.svg.png";
 import process1 from "../assets/IMG_4045.webp";
 import process2 from "../assets/IMG_4651.webp";
+import process3 from "../assets/IMG_6461.webp";
+
+
 
 import Card from "../components/Card";
 import CallButton from "../components/CallButton";
@@ -73,7 +76,7 @@ const services = [
     title: "INTERIOR & EXTERIOR DETAIL",
     price: 249,
     description:
-      "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
+      "Comprehensive car detailing with interior steam cleaning, shampooing, odor removal, and exterior wash, wax, and UV protection.",
     image: img1,
     slug: "interior-exterior-detail",
   },
@@ -81,7 +84,7 @@ const services = [
     title: "INTERIOR ONLY DETAIL",
     price: 199,
     description:
-      "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
+      "Interior detailing with vacuuming, steam sanitation, shampoo and extraction, odor removal, plus leather, vinyl, and trim conditioning.",
     image: img2,
     slug: "interior-detail",
   },
@@ -89,7 +92,7 @@ const services = [
     title: "PAINT RESTORATION",
     price: 499,
     description:
-      "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
+      "Paint restoration with iron and clay treatment, swirl and scratch removal, polishing, and long-term protection through wax, sealant, or ceramic coating.",
     image: img4,
     slug: "paint-restoration",
   },
@@ -248,7 +251,7 @@ const Home = () => (
         {reviews.map(({ review, name }, i) => (
           <div
             key={i}
-            className="flex flex-col justify-between gap-10 min-h-80 h-auto md:text-xl text-light backdrop-blur-lg p-5 rounded-xl border border-light"
+            className="flex flex-col justify-between gap-10 h-auto md:text-xl text-light backdrop-blur-lg p-5 rounded-xl border border-light"
           >
             <p>{review}</p>
             <div className="flex justify-between">
@@ -283,7 +286,7 @@ const Home = () => (
           <h2 className="text-light font-mono font-medium md:text-xl">
             (Because Every Detail Matters)
           </h2>
-          <h1 className="text-light font-bold text-center text-6xl md:text-8xl lg:text-9xl">
+          <h1 className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl">
             BOOK YOUR DETAIL
           </h1>
 
@@ -291,12 +294,12 @@ const Home = () => (
             <img
               src={cta1}
               alt="Detailing example 1"
-              className="col-span-2 h-50 w-full object-cover rounded-xl md:h-80"
+              className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl md:h-80"
             />
             <img
               src={cta2}
               alt="Detailing example 2"
-              className="col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
+              className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
             />
             {/* <img
                 src={cta4}
@@ -306,7 +309,7 @@ const Home = () => (
             <img
               src={cta3}
               alt="Detailing example 3"
-              className=" col-span-2 h-50 w-full object-cover rounded-xl hidden md:block md:h-80"
+              className=" col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
             />
           </div>
         </div>
@@ -321,7 +324,7 @@ const Home = () => (
         description="I follow a simple, step-by-step process designed to give your vehicle the best results. From the initial inspection to the final touch, every stage is handled with care, using proven techniques and professional products to clean, restore, and protect your ride."
         variant="dark"
       />
-      <SectionBody image1={process1} image2={process2} />
+      <SectionBody image1={process1} image2={process2} image3={process3}/>
     </Section>
     <div className="rounded-b-full w-full h-10 bg-dark"></div>
 

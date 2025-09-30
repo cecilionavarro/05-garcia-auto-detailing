@@ -33,13 +33,13 @@ const SectionHeader = ({
     <div className={`grid gap-5 pb-10 ${isDark ? "text-light" : "text-dark"} md:grid-cols-6 md:pb-10 md:gap-10`}>
       <h1 className="flex items-center font-bold text-5xl md:col-span-full md:text-7xl">
         {title}
-        <div className="flex align-middle ml-5 hidden md:block">
+        <div className="align-middle ml-5 hidden md:flex">
           <Icon variant={variant} />
         </div>
       </h1>
       <div className="flex gap-5 md:col-span-2">
         <h2 className="text-2xl font-medium font-mono">({label})</h2>
-        <div className="flex items-center block md:hidden">
+        <div className="flex items-center md:hidden">
           <Icon variant={variant} />
         </div>
       </div>

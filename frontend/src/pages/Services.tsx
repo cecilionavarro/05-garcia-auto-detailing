@@ -11,17 +11,11 @@ import img3 from "../assets/IMG_5763 copy.webp"
 import img4 from "../assets/IMG_0250.webp"
 import img7 from "../assets/IMG_1549.webp"
 import img8 from "../assets/IMG_6871 copy.webp"
+import img9 from "../assets/IMG_9926.webp"
+import img10 from "../assets/IMG_0584.webp"
+import img11 from "../assets/IMG_7798.webp"
 
 export const interiorExteriorDetail: ServiceGroup[] = [
-  {
-    title: "INTERIOR",
-    items: [
-      "Thorough vacuum throughout the full interior",
-      "Hot steam sanitation for maximum cleaning results",
-      "Full shampoo & heated water extraction",
-      "Odor eliminator bomb for strong odor removal",
-    ],
-  },
   {
     title: "EXTERIOR",
     items: [
@@ -30,6 +24,15 @@ export const interiorExteriorDetail: ServiceGroup[] = [
       "Hand foam wash & dry",
       "Spray wax with UV protection",
       "Non-greasy matte tire dressing",
+    ],
+  },
+  {
+    title: "INTERIOR",
+    items: [
+      "Thorough vacuum throughout the full interior",
+      "Hot steam sanitation for maximum cleaning results",
+      "Full shampoo & heated water extraction",
+      "Odor eliminator bomb for strong odor removal",
     ],
   },
   {
@@ -81,7 +84,7 @@ export const paintRestoration: ServiceGroup[] = [
     title: "CORRECTION",
     items: [
       "Iron removal & clay treatment to deep clean paint surface",
-      "Cutting compound to remove up to 85–95% of swirls and scratches (budget option: 50–60%)",
+      "Cutting compound to remove up to 85-95% of swirls and scratches (budget option: 50-60%)",
       "Polishing stage to refine finish and boost gloss",
       "Odor eliminator bomb for strong odor removal",
     ],
@@ -105,12 +108,13 @@ export const Services = () => {
         <SectionHeader
           title="INTERIOR & EXTERIOR DETAIL"
           label="STARTING AT $249"
-          description="Enjoy expert care, precision, and lasting results. Using professional products and proven techniques, I'll transform your vehicle inside and out — delivering a spotless finish you'll notice every time you drive."
+          description="Give your car the care it deserves with a service designed to refresh, protect, and restore its beauty inside and out. With attention to detail and a focus on lasting results, your vehicle will not only look spotless but also feel renewed every time you get behind the wheel."
           variant="dark"
         />
         <SectionBody
         image1={img1}
         image2={img2}
+        image3={img11}
         sections={interiorExteriorDetail}
         />
       </Section>
@@ -119,11 +123,12 @@ export const Services = () => {
         <SectionHeader
           title="INTERIOR DETAIL"
           label="STARTING AT $199"
-          description="When you choose my services, you get more than just a clean car—you get expert care, attention to detail, and results that last. Using professional-grade products and proven techniques, I make sure your vehicle not only looks amazing but is also protected for the long run."
+          description="This interior detail service brings new life to your cabin, leaving it clean, refreshed, and comfortable. Beyond a deep clean, added conditioning and protection ensure your seats, trim, and air stay fresh long after the service is complete."
           />
         <SectionBody
         image1={img4}
         image2={img3}
+        image3={img10}
         sections={interiorDetail}
         />
       </Section>
@@ -146,12 +151,13 @@ export const Services = () => {
         <SectionHeader
           title="PAINT RESTORATION"
           label="STARTING AT $499"
-          description="When you choose my services, you get more than just a clean car—you get expert care, attention to detail, and results that last. Using professional-grade products and proven techniques, I make sure your vehicle not only looks amazing but is also protected for the long run."
+          description="This paint restoration service revives your vehicle’s finish by removing deep contaminants, reducing swirls and scratches, and polishing for a brilliant gloss. To preserve the results, layers of protection ranging from wax to premium ceramic coating keep the paint shining and shielded for months or even years."
           variant="dark"
           />
         <SectionBody
         image1={img8}
-        image2={img7}
+        image2={img9}
+        image3={img7}
         sections={paintRestoration}
         />
       </Section>

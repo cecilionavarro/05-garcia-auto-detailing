@@ -38,17 +38,17 @@ const About = () => {
 
       <Section dark>
         <div className="flex flex-col gap-5">
-          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Quality</span> — No corners cut.
           </h2>
-          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Convenience</span> — I come to you.
           </h2>
-          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Experience</span> — Any vehicle, any
             challenge.
           </h2>
-          <h2 className="font-bold text-xl md:text-4xl lg:text-5xl">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
             <span className="text-accent">Satisfaction</span> — You'll smile
             when it's done.
           </h2>
@@ -57,18 +57,18 @@ const About = () => {
 
       <Section>
         <div className="leading-none flex flex-col">
-          <h2 className="font-bold text-5xl">VISION FOR THE</h2>
-          <h1 className="relative font-bold text-[12rem]">
+          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">VISION FOR THE</h2>
+          <h1 className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]">
             <span className="relative text-accent">FUTURE</span>
-            <span className="aria-hidden absolute inset-0 text-brand translate-x-2">
+            <span className="aria-hidden absolute inset-0 text-brand translate-x-1 lg:translate-x-2">
               FUTURE
             </span>
-            <span className="aria-hidden absolute inset-0 text-dark translate-x-4">
+            <span className="aria-hidden absolute inset-0 text-dark translate-x-2 lg:translate-x-4">
               FUTURE
             </span>
           </h1>
           <div className="leading-normal flex flex-col gap-10">
-            <p className="text-xl">
+            <p className="md:text-xl">
               I'm proud to serve Bakersfield, but my vision is to grow—opening a
               dedicated shop, expanding services to include wraps and tint, and
               helping even more people enjoy their vehicles. Until then, I'll keep

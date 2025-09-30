@@ -36,7 +36,7 @@ const Card = ({ title, label, price, description, image, slug }: CardProps) => {
       <img
         src={image}
         alt="car"
-        className="object-cover w-full h-50 rounded-xl md:h-80"
+        className="object-cover w-full aspect-[16/9] rounded-xl md:h-80"
       />
       <div className="flex flex-col gap-2">
         <div>

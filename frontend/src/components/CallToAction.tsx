@@ -5,12 +5,12 @@ const CallToAction = () => {
   return (
     <div className="px-5 py-10 md:px-10 md:py-20">
       <div className="relative bg-dark w-full h-[90svh] rounded-xl px-5 py-10 md:px-10 md:py-20">
-        <div className="h-full flex flex-col items-center justify-center gap-10 md:gap-20">
+        <div className="h-full flex flex-col items-center justify-center gap-10 md:gap-20 ">
           <div className="flex flex-col items-center gap-5 md:gap-10">
             <h2 className="text-light font-mono font-medium md:text-xl">
               (Need a professional clean?)
             </h2>
-            <h1 className="text-light font-bold text-center text-6xl md:text-8xl lg:text-9xl">
+            <h1 className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl">
               LET'S MAKE <br /> THIS HAPPEN
             </h1>
           </div>
