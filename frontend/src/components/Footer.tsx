@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="grid grid-cols-6 px-5 py-10 md:px-10 md:py-20 gap-5">
       <div className="flex flex-col gap-5 col-span-4 md:col-span-2">
         <h3 className="font-bold border-b pb-2">INFORMATION</h3>
-        <a href="tel:+15551234567" className="hover:text-accent">
+        <a href="tel:+16618622372" className="hover:text-accent">
           661 862 2372
         </a>
         <a href="mailto:garciadetails84@gmail.com" className="hover:text-accent">garciadetails84@gmail.com</a>
