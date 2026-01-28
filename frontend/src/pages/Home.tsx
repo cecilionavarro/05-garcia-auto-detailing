@@ -154,7 +154,7 @@ const Home = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         motionWordRef.current,
-        { xPercent: -150 },
+        { xPercent: -100 },
         {
           xPercent: 0,
           ease: "none",

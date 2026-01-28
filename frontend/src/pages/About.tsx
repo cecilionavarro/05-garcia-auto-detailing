@@ -6,8 +6,39 @@ import Section from "../components/Section";
 import SectionHeader from "../components/SectionHeader";
 import SectionHeader2 from "../components/SectionHeader2";
 import CallButton from "../components/CallButton";
+import BlurText from "../components/ui/BlurText";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const About = () => {
+  const futureWordRef = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (!futureWordRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        futureWordRef.current,
+        { xPercent: 0 },
+        {
+          xPercent: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: futureWordRef.current,
+            start: "top 80%",
+            end: "top 20%",
+            scrub: true,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div className="bg-light">
       <PageHeader title="ABOUT" />
@@ -25,8 +56,20 @@ const About = () => {
 
       <Section dark>
         <div className="leading-none flex justify-between">
-          <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">EST.</h1>
-          <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">‘20</h1>
+          <BlurText
+            text="EST."
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="font-bold text-7xl md:text-9xl lg:text-[12rem]"
+          />
+          <BlurText
+            text="‘20"
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="font-bold text-7xl md:text-9xl lg:text-[12rem]"
+          />
         </div>
         <SectionHeader
           title="WHAT MAKES ME DIFFERENT"
@@ -57,8 +100,17 @@ const About = () => {
 
       <Section>
         <div className="leading-none flex flex-col">
-          <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">VISION FOR THE</h2>
-          <h1 className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]">
+          <BlurText
+            text="VISION FOR THE"
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="font-bold text-3xl md:text-4xl lg:text-5xl"
+          />
+          <h1
+            ref={futureWordRef}
+            className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]"
+          >
             <span className="relative text-accent">FUTURE</span>
             <span className="aria-hidden absolute inset-0 text-brand translate-x-1 lg:translate-x-2">
               FUTURE
