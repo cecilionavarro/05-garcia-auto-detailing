@@ -11,8 +11,8 @@ const PageHeader = ({ title }: PageHeaderProps) => {
       <div className="col-span-full flex flex-row items-center font-bold text-5xl md:text-8xl pb-10 md:pt-20">
         <BlurText
           text={title}
-          delay={5}
-          animateBy="words"
+          delay={50}
+          animateBy="letters"
           direction="bottom"
           className="font-bold text-5xl md:text-8xl"
         />
