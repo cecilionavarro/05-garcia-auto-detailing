@@ -154,13 +154,13 @@ const Home = () => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         motionWordRef.current,
-        { xPercent: -100 },
+        { xPercent: -25 },
         {
           xPercent: 0,
           ease: "none",
           scrollTrigger: {
             trigger: motionWordRef.current,
-            start: "top 80%",
+            start: "top 100%",
             end: "top 20%",
             scrub: true,
           },
@@ -416,7 +416,7 @@ const Home = () => {
             delay={5}
             animateBy="words"
             direction="bottom"
-            className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl"
+            className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl justify-center"
           />
 
           <div className="grid md:grid-cols-6 gap-5">

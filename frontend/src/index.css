@@ -21,6 +21,10 @@
   --small-square-size: .8rem;
 }
 
+html, body, #root {
+  background: var(--color-light);
+}
+
 /* === Neue Montreal (Sans) === */
 @font-face {
   font-family: "NeueMontreal";
