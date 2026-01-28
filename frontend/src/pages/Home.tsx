@@ -297,9 +297,13 @@ const Home = () => {
         </div>
       </div> */}
       <div>
-        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
-          MOBILE DETAILING IN
-        </h2>
+        <BlurText
+          text="MOBILE DETAILING IN"
+          delay={5}
+          animateBy="words"
+          direction="bottom"
+          className="font-bold text-3xl md:text-4xl lg:text-5xl"
+        />
         <div className="flex justify-between">
           <p
             ref={motionArrowRef}
@@ -346,10 +350,20 @@ const Home = () => {
         <h1 className="font-bold text-[12rem] text-accent">STARS</h1>
       </div> */}
       <div className="leading-none flex justify-between">
-        <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">5</h1>
-        <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem] text-accent">
-          STARS
-        </h1>
+        <BlurText
+          text="5"
+          delay={5}
+          animateBy="words"
+          direction="bottom"
+          className="font-bold text-7xl md:text-9xl lg:text-[12rem]"
+        />
+        <BlurText
+          text="STARS"
+          delay={5}
+          animateBy="words"
+          direction="bottom"
+          className="font-bold text-7xl md:text-9xl lg:text-[12rem] text-accent"
+        />
       </div>
       <SectionHeader
         title="DON'T TAKE MY WORD FOR IT"
@@ -397,9 +411,13 @@ const Home = () => {
           <h2 className="text-light font-mono font-medium md:text-xl">
             (Because Every Detail Matters)
           </h2>
-          <h1 className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl">
-            BOOK YOUR DETAIL
-          </h1>
+          <BlurText
+            text="BOOK YOUR DETAIL"
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl"
+          />
 
           <div className="grid md:grid-cols-6 gap-5">
             <img

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Icon from "./Icon";
+import BlurText from "./ui/BlurText";
 import { FaTiktok } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
@@ -87,9 +88,13 @@ const Footer = () => {
       </div>
       <div className="col-span-full flex flex-row items-center justify-center pt-20">
         <Icon />
-        <h1 className="ml-5 font-bold text-[6.8svw]">
-          &copy; 2025 Garcia Auto Detailing
-        </h1>
+        <BlurText
+          text="© 2025 Garcia Auto Detailing"
+          delay={5}
+          animateBy="words"
+          direction="bottom"
+          className="ml-5 font-bold text-[6.8svw]"
+        />
       </div>
     </div>
   );

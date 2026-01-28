@@ -1,5 +1,6 @@
 import CallButton from "./CallButton";
 import Icon from "./Icon";
+import BlurText from "./ui/BlurText";
 
 const CallToAction = () => {
   return (
@@ -10,9 +11,13 @@ const CallToAction = () => {
             <h2 className="text-light font-mono font-medium md:text-xl">
               (Need a professional clean?)
             </h2>
-            <h1 className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl">
-              LET'S MAKE <br /> THIS HAPPEN
-            </h1>
+            <BlurText
+                text="LET'S MAKE THIS HAPPEN"
+                delay={5}
+                animateBy="words"
+                direction="bottom"
+                className="text-light font-bold text-center text-5xl md:text-8xl lg:text-9xl justify-center"
+              />
           </div>
           <CallButton />
         </div>
