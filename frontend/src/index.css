@@ -145,3 +145,23 @@ html, body, #root {
   font-weight: 700;
   font-style: italic;
 }
+
+@keyframes heroZoomIn {
+  from {
+    transform: scale(1.15);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.hero-zoom {
+  transform-origin: bottom;
+  animation: heroZoomIn 0.5s ease-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-zoom {
+    animation: none;
+  }
+}

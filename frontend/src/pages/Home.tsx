@@ -193,7 +193,7 @@ const Home = () => {
       <img
         src={heroImg}
         alt="car interior"
-        className="absolute h-full w-full object-cover"
+        className="absolute h-full w-full object-cover hero-zoom"
       />
       <div className="relative z-1 text-light flex flex-col h-full justify-end px-5 py-10 bg-black/40 md:px-10 md:py-20 lg:grid lg:grid-cols-2">
         <div className="lg:flex lg:flex-col lg:justify-end">
@@ -202,30 +202,30 @@ const Home = () => {
           </h2>
           <BlurText
             text="GARCIA"
-            delay={5}
-            animateBy="words"
+            delay={50}
+            animateBy="letters"
             direction="bottom"
             className="text-6xl font-bold md:text-8xl xl:text-9xl"
           />
           <BlurText
             text="AUTO"
-            delay={5}
-            animateBy="words"
+            delay={50}
+            animateBy="letters"
             direction="bottom"
             className="text-6xl font-bold md:text-8xl xl:text-9xl"
           />
           <div className="flex items-start">
             <BlurText
               text="DETAILING"
-              delay={5}
-              animateBy="words"
+              delay={50}
+              animateBy="letters"
               direction="bottom"
               className="text-6xl font-bold md:text-8xl xl:text-9xl"
             />
             <BlurText
               text="©"
-              delay={0}
-              animateBy="words"
+              delay={50}
+              animateBy="letters"
               direction="bottom"
               className="text-2xl font-bold align-top relative top-1.5 md:text-4xl md:top-2 lg:text-5xl"
             />
@@ -248,8 +248,8 @@ const Home = () => {
           </h2>
           <BlurText
             text="BAKERSFIELD, CA"
-            delay={5}
-            animateBy="words"
+            delay={50}
+            animateBy="letters"
             direction="bottom"
             className="text-4xl font-bold md:text-5xl xl:text-6xl lg:justify-end"
           />
