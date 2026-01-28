@@ -18,7 +18,7 @@ const Footer = () => {
         >
           garciadetails84@gmail.com
         </a>
-        <div className="-ml-2 flex gap-2">
+        <div className="-ml-1 flex gap-2">
           <a
             href="https://www.tiktok.com/@garcia.auto.detailing"
             target="_blank"
