@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSquareFacebook } from "@fortawesome/free-brands-svg-icons";
 import Icon from "./Icon";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
-import { faSquareInstagram } from "@fortawesome/free-brands-svg-icons/faSquareInstagram";
+import { FaTiktok } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -13,18 +12,22 @@ const Footer = () => {
         <a href="tel:+16618622372" className="hover:text-accent">
           661 862 2372
         </a>
-        <a href="mailto:garciadetails84@gmail.com" className="hover:text-accent">garciadetails84@gmail.com</a>
-        <div className="-ml-2 flex">
+        <a
+          href="mailto:garciadetails84@gmail.com"
+          className="hover:text-accent"
+        >
+          garciadetails84@gmail.com
+        </a>
+        <div className="-ml-2 flex gap-2">
           <a
-            href="https://www.linkedin.com/in/garcia-auto-detailing-6a8316323/"
+            href="https://www.tiktok.com/@garcia.auto.detailing"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
           >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="text-5xl hover:text-accent"
-            />
+            <div className="bg-dark p-1 rounded-md hover:bg-accent">
+              <FaTiktok className="text-4xl text-light" />
+            </div>
           </a>
           <a
             href="https://www.instagram.com/garcia.auto.detailing/"
@@ -32,21 +35,19 @@ const Footer = () => {
             rel="noopener noreferrer"
             aria-label="Instagram"
           >
-            <FontAwesomeIcon
-              icon={faSquareInstagram}
-              className="text-5xl hover:text-accent"
-            />
+            <div className="bg-dark p-1 rounded-md hover:bg-accent">
+            <FaInstagram className="text-4xl text-light" />
+            </div>
           </a>
           <a
-            href="https://nextdoor.com/pages/garcia-auto-detailing-bakersfield-ca/"
+            href="https://www.facebook.com/people/Brian-Garcia/pfbid0CDckbtWx7DNei4M3jWqJ3GVWq4xSCxNipgBih4rqt95NU4LdxwijquXE2qfMwLb9l/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
           >
-            <FontAwesomeIcon
-              icon={faSquareFacebook}
-              className="text-5xl hover:text-accent"
-            />
+            <div className="bg-dark p-1 rounded-md hover:bg-accent">
+              <FaFacebookF className="text-4xl text-light" />
+            </div>
           </a>
         </div>
       </div>
@@ -69,17 +70,17 @@ const Footer = () => {
         <h3 className="font-bold border-b pb-2">HOURS</h3>
         <div className="grid grid-cols-3 gap-5">
           <p>Monday</p>
-          <p className="col-span-2">6 am - 8 pm</p>
+          <p className="col-span-2">8 am - 5 pm</p>
           <p>Tuesday</p>
-          <p className="col-span-2">6 am - 8 pm</p>
+          <p className="col-span-2">8 am - 5 pm</p>
           <p>Wednesday</p>
-          <p className="col-span-2">6 am - 6 pm</p>
+          <p className="col-span-2">8 am - 5 pm</p>
           <p>Thursday</p>
-          <p className="col-span-2">6 am - 6 pm</p>
+          <p className="col-span-2">8 am - 5 pm</p>
           <p>Friday</p>
-          <p className="col-span-2">6 am - 6 pm</p>
+          <p className="col-span-2">8 am - 5 pm</p>
           <p>Saturday</p>
-          <p className="col-span-2">6 am - 8 pm</p>
+          <p className="col-span-2">8 am - 5 pm</p>
           <p>Sunday</p>
           <p className="col-span-2">Closed</p>
         </div>

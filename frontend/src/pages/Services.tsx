@@ -5,15 +5,21 @@ import PageHeader from "../components/PageHeader";
 import Section from "../components/Section";
 import SectionBody, { type ServiceGroup } from "../components/SectionBody";
 import SectionHeader from "../components/SectionHeader";
-import img1 from "../assets/IMG_9907.webp"
-import img2 from "../assets/IMG_1725.webp"
-import img3 from "../assets/IMG_5763 copy.webp"
-import img4 from "../assets/IMG_0250.webp"
-import img7 from "../assets/IMG_1549.webp"
-import img8 from "../assets/IMG_6871 copy.webp"
-import img9 from "../assets/IMG_9926.webp"
-import img10 from "../assets/IMG_0584.webp"
-import img11 from "../assets/IMG_7798.webp"
+import img1 from "../assets/IMG_1725.webp";
+import img2 from "../assets/IMG_9907.webp";
+import img3 from "../assets/IMG_2106.webp";
+import img4 from "../assets/IMG_5763 copy.webp";
+import img5 from "../assets/IMG_0250.webp";
+import img6 from "../assets/IMG_0584.webp";
+import img7 from "../assets/IMG_2157.webp";
+import img8 from "../assets/IMG_2144.webp";
+import img9 from "../assets/IMG_2132.webp";
+import img10 from "../assets/IMG_2123.webp";
+import img11 from "../assets/IMG_2121.webp";
+import img12 from "../assets/IMG_2122.webp";
+import img13 from "../assets/IMG_0389.webp";
+import img14 from "../assets/IMG_2125.webp";
+import img15 from "../assets/IMG_0501.webp";
 
 export const interiorExteriorDetail: ServiceGroup[] = [
   {
@@ -44,7 +50,6 @@ export const interiorExteriorDetail: ServiceGroup[] = [
     ],
   },
 ];
-
 
 export const interiorDetail: ServiceGroup[] = [
   {
@@ -79,26 +84,59 @@ export const deepGlossEnhancement: ServiceGroup[] = [
   },
 ];
 
-export const paintRestoration: ServiceGroup[] = [
+export const engineBayDetail: ServiceGroup[] = [
   {
-    title: "CORRECTION",
+    title: "ENGINE BAY",
     items: [
-      "Iron removal & clay treatment to deep clean paint surface",
-      "Cutting compound to remove up to 85-95% of swirls and scratches (budget option: 50-60%)",
-      "Polishing stage to refine finish and boost gloss",
-      "Odor eliminator bomb for strong odor removal",
+      "Sensitive components safely covered for protection",
+      "Degreasing and agitation with dedicated detail brushes",
+      "Careful rinse and full blow-dry for safe startup",
+      "Non-oily dressing on plastics and trim for a clean black finish",
+    ],
+  },
+  {
+    title: "BONUS",
+    items: [
+      "Exterior wash included",
+      "Wheels, inner barrels, and tires cleaned and shined",
+    ],
+  },
+];
+
+export const odorEliminatingTreatment: ServiceGroup[] = [
+  {
+    title: "ODOR REMOVAL",
+    items: [
+      "Chemical odor bomb treatment after interior detailing",
+      "One-hour circulation to neutralize stubborn odors",
+      "Process reaches vents, fabrics, and interior surfaces",
+      "Vehicle aired out with A/C cycling after treatment",
+    ],
+  },
+  {
+    title: "RECOMMENDED",
+    items: ["Cabin air filter replacement for best long-term results"],
+  },
+];
+
+export const paintEnhancement: ServiceGroup[] = [
+  {
+    title: "ENHANCEMENT",
+    items: [
+      "Thorough exterior wash and paint decontamination",
+      "Clay treatment to remove bonded surface contaminants",
+      "Iron removal from paint and glass",
+      "One-step machine polish to enhance gloss and clarity",
     ],
   },
   {
     title: "PROTECTION",
     items: [
-      "Complimentary paint wax (up to 3 months protection)",
-      "Optional sealant upgrade (up to 6 months protection)",
-      "Premium ceramic coating (up to 2+ years protection, enhanced gloss, UV defense, self-cleaning, and environmental protection)",
+      "Complimentary paint sealant",
+      "Up to 3 months of UV protection and hydrophobic properties",
     ],
   },
 ];
-
 
 export const Services = () => {
   return (
@@ -112,10 +150,10 @@ export const Services = () => {
           variant="dark"
         />
         <SectionBody
-        image1={img1}
-        image2={img2}
-        image3={img11}
-        sections={interiorExteriorDetail}
+          image1={img1}
+          image2={img2}
+          image3={img3}
+          sections={interiorExteriorDetail}
         />
       </Section>
 
@@ -123,13 +161,13 @@ export const Services = () => {
         <SectionHeader
           title="INTERIOR DETAIL"
           label="STARTING AT $199"
-          description="This interior detail service brings new life to your cabin, leaving it clean, refreshed, and comfortable. Beyond a deep clean, added conditioning and protection ensure your seats, trim, and air stay fresh long after the service is complete."
-          />
+          description="This interior detail service brings new life to your car, leaving it clean, refreshed, and comfortable. Beyond a deep clean, added conditioning and protection ensure your seats, trim, and air stay fresh long after the service is complete."
+        />
         <SectionBody
-        image1={img4}
-        image2={img3}
-        image3={img10}
-        sections={interiorDetail}
+          image1={img4}
+          image2={img5}
+          image3={img6}
+          sections={interiorDetail}
         />
       </Section>
 
@@ -147,18 +185,50 @@ export const Services = () => {
         />
       </Section> */}
 
-      <Section dark id="paint-restoration">
+      {/* NEW: ENGINE BAY DETAIL */}
+      <Section dark id="engine-bay-detail">
         <SectionHeader
-          title="PAINT RESTORATION"
-          label="STARTING AT $499"
-          description="This paint restoration service revives your vehicle’s finish by removing deep contaminants, reducing swirls and scratches, and polishing for a brilliant gloss. To preserve the results, layers of protection ranging from wax to premium ceramic coating keep the paint shining and shielded for months or even years."
+          title="ENGINE BAY DETAIL"
+          label="STARTING AT $100"
+          description="A safe and thorough engine bay cleaning that restores a clean, like-new appearance while protecting sensitive components for peace of mind."
           variant="dark"
-          />
+        />
         <SectionBody
-        image1={img8}
-        image2={img9}
-        image3={img7}
-        sections={paintRestoration}
+          image1={img7}
+          image2={img8}
+          image3={img9}
+          sections={engineBayDetail}
+        />
+      </Section>
+
+      {/* NEW: ODOR ELIMINATING TREATMENT (ADD-ON) */}
+      <Section id="odor-eliminating-treatment">
+        <SectionHeader
+          title="ODOR ELIMINATING TREATMENT"
+          label="ADD-ON $50"
+          description="Eliminate stubborn odors after an interior detail with a chemical treatment designed to neutralize smells throughout the entire cabin."
+        />
+        <SectionBody
+          image1={img10}
+          image2={img11}
+          image3={img12}
+          sections={odorEliminatingTreatment}
+        />
+      </Section>
+
+      {/* NEW: PAINT ENHANCEMENT */}
+      <Section dark id="paint-enhancement">
+        <SectionHeader
+          title="PAINT ENHANCEMENT"
+          label="STARTING AT $299"
+          description="A deep exterior refresh that removes bonded contaminants and boosts gloss with a one-step polish, finished with protection for easier maintenance."
+          variant="dark"
+        />
+        <SectionBody
+          image1={img13}
+          image2={img14}
+          image3={img15}
+          sections={paintEnhancement}
         />
       </Section>
 
@@ -170,6 +240,7 @@ export const Services = () => {
         />
         <Faq />
       </Section>
+
       <CallToAction />
       <Footer />
     </div>

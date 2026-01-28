@@ -1,4 +1,4 @@
-import Hero from "../assets/home-hero.webp";
+import heroImg from "../assets/home-hero.webp";
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";
@@ -8,26 +8,26 @@ import SectionHeader2 from "../components/SectionHeader2";
 import { faStar as solidStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import imgConvenience from "../assets/benefits/IMG_1101.webp";
-import imgGuarantee from "../assets/benefits/IMG_0172.webp";
-import imgExpertise from "../assets/benefits/IMG_0283.webp";
-import cta1 from "../assets/cta/IMG_5763.webp";
-import cta2 from "../assets/cta/IMG_0478.webp";
-import cta3 from "../assets/cta/IMG_1723.webp";
-import img1 from "../assets/services/IMG_1480.webp";
-import img2 from "../assets/services/IMG_7818.webp";
-import img4 from "../assets/services/IMG_6871.webp";
+import benefitConvenienceImg from "../assets/IMG_2151.webp";
+import benefitGuaranteeImg from "../assets/IMG_3185.webp";
+import benefitExpertiseImg from "../assets/IMG_1504.webp";
+import ctaImg1 from "../assets/cta/IMG_5763.webp";
+import ctaImg2 from "../assets/cta/IMG_0478.webp";
+import ctaImg3 from "../assets/cta/IMG_1723.webp";
+import serviceImg1 from "../assets/IMG_0124.webp";
+import serviceImg2 from "../assets/services/IMG_7818.webp";
+import serviceImg3 from "../assets/IMG_1903.webp";
+import serviceImg4 from "../assets/IMG_2120.webp";
+import serviceImg5 from "../assets/IMG_1492.webp";
 import BMWLogo from "../assets/car-logos/BMW.svg";
 import CorvetteLogo from "../assets/car-logos/Logo_Corvette_-Transparency.png";
 import MercedesLogo from "../assets/car-logos/Mercedes-Benz_Star.svg";
 import PorscheLogo from "../assets/car-logos/Porsche_Logo.svg.png";
 import LexusLogo from "../assets/car-logos/lexus_logo.svg.png";
 import TelsaLogo from "../assets/car-logos/tesla_logo.svg.png";
-import process1 from "../assets/IMG_4045.webp";
-import process2 from "../assets/IMG_4651.webp";
-import process3 from "../assets/IMG_6461.webp";
-
-
+import processImg1 from "../assets/IMG_4045.webp";
+import processImg2 from "../assets/IMG_1480.webp";
+import processImg3 from "../assets/IMG_2044.webp";
 
 import Card from "../components/Card";
 import CallButton from "../components/CallButton";
@@ -77,7 +77,7 @@ const services = [
     price: 249,
     description:
       "Comprehensive car detailing with interior steam cleaning, shampooing, odor removal, and exterior wash, wax, and UV protection.",
-    image: img1,
+    image: serviceImg1,
     slug: "interior-exterior-detail",
   },
   {
@@ -85,16 +85,32 @@ const services = [
     price: 199,
     description:
       "Interior detailing with vacuuming, steam sanitation, shampoo and extraction, odor removal, plus leather, vinyl, and trim conditioning.",
-    image: img2,
+    image: serviceImg2,
     slug: "interior-detail",
   },
   {
-    title: "PAINT RESTORATION",
-    price: 499,
+    title: "ENGINE BAY DETAIL",
+    price: 100,
     description:
-      "Paint restoration with iron and clay treatment, swirl and scratch removal, polishing, and long-term protection through wax, sealant, or ceramic coating.",
-    image: img4,
-    slug: "paint-restoration",
+      "Engine bay detailing with safe degreasing, agitation, and protection of sensitive components, finished with a non-oily dressing and exterior wash.",
+    image: serviceImg3,
+    slug: "engine-bay-detail",
+  },
+  {
+    title: "ODOR ELIMINATING TREATMENT",
+    price: 50,
+    description:
+      "Chemical odor elimination treatment that neutralizes stubborn smells throughout the vehicle interior after detailing for a clean, fresh finish.",
+    image: serviceImg4,
+    slug: "odor-eliminating-treatment",
+  },
+  {
+    title: "PAINT ENHANCEMENT",
+    price: 299,
+    description:
+      "Exterior paint enhancement with clay and iron decontamination, one-step machine polishing, and sealant for added gloss, shine, and protection.",
+    image: serviceImg5,
+    slug: "paint-enhancement",
   },
 ];
 
@@ -104,21 +120,21 @@ export const benefits = [
     label: "MOBILE DETAILING",
     description:
       "I bring the shine to you — no lines, no waiting. Fully equipped, I detail your vehicle wherever it's parked so you can get on with your day.",
-    image: imgConvenience,
+    image: benefitConvenienceImg,
   },
   {
     title: "MY GUARANTEE",
     label: "SATISFACTION PROMISE",
     description:
       "I will not leave until you're happy. If something's not perfect, I'll fix it right there before handing back your keys.",
-    image: imgGuarantee,
+    image: benefitGuaranteeImg,
   },
   {
     title: "EXPERTISE",
     label: "ALL VEHICLE TYPES",
     description:
       "From luxury cars and classics to trucks, RVs, boats, and motorcycles, I've detailed them all — and we know exactly where dirt hides.",
-    image: imgExpertise,
+    image: benefitExpertiseImg,
   },
 ];
 
@@ -126,7 +142,7 @@ const Home = () => (
   <div className="bg-light">
     <div className="relative h-[80vh] w-full">
       <img
-        src={Hero}
+        src={heroImg}
         alt="car interior"
         className="absolute h-full w-full object-cover"
       />
@@ -198,7 +214,9 @@ const Home = () => (
         </div>
       </div> */}
       <div>
-        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">MOBILE DETAILING IN</h2>
+        <h2 className="font-bold text-3xl md:text-4xl lg:text-5xl">
+          MOBILE DETAILING IN
+        </h2>
         <div className="flex justify-between">
           <p className="text-6xl md:text-8xl lg:text-[12rem]">→</p>
           <h1 className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]">
@@ -238,7 +256,9 @@ const Home = () => (
       </div> */}
       <div className="leading-none flex justify-between">
         <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem]">5</h1>
-        <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem] text-accent">STARS</h1>
+        <h1 className="font-bold text-7xl md:text-9xl lg:text-[12rem] text-accent">
+          STARS
+        </h1>
       </div>
       <SectionHeader
         title="DON'T TAKE MY WORD FOR IT"
@@ -292,12 +312,12 @@ const Home = () => (
 
           <div className="grid md:grid-cols-6 gap-5">
             <img
-              src={cta1}
+              src={ctaImg1}
               alt="Detailing example 1"
               className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl md:h-80"
             />
             <img
-              src={cta2}
+              src={ctaImg2}
               alt="Detailing example 2"
               className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
             />
@@ -307,7 +327,7 @@ const Home = () => (
                 className="h-100 w-full object-cover rounded-xl"
               /> */}
             <img
-              src={cta3}
+              src={ctaImg3}
               alt="Detailing example 3"
               className=" col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
             />
@@ -324,7 +344,11 @@ const Home = () => (
         description="I follow a simple, step-by-step process designed to give your vehicle the best results. From the initial inspection to the final touch, every stage is handled with care, using proven techniques and professional products to clean, restore, and protect your ride."
         variant="dark"
       />
-      <SectionBody image1={process1} image2={process2} image3={process3}/>
+      <SectionBody
+        image1={processImg1}
+        image2={processImg2}
+        image3={processImg3}
+      />
     </Section>
     <div className="rounded-b-full w-full h-10 bg-dark"></div>
 

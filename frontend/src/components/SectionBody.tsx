@@ -16,12 +16,12 @@ const SectionBody = ({ image1, image2, image3, sections }: Section) => {
     <div className="grid grid-rows-[auto_auto_auto] items-start gap-5 md:grid-cols-6">
       <img
         className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl md:h-80"
-        src={image2}
+        src={image1}
         alt=""
       />
       <img
         className="col-span-2 aspect-[16/9] w-full object-cover rounded-xl hidden md:block md:h-80"
-        src={image1}
+        src={image2}
         alt=""
       />
       <img
