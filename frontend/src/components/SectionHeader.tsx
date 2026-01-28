@@ -1,4 +1,5 @@
 import Icon from "./Icon";
+import BlurText from "./ui/BlurText";
 
 interface SectionHeaderProps {
   title: string;
@@ -30,21 +31,30 @@ const SectionHeader = ({
     //   <h2 className="col-span-2 font-mono font-medium text-3xl">({label})</h2>
     //   <p className="col-span-2 text-xl col-span-4">{description}</p>
     // </div>
-    <div className={`grid gap-5 pb-10 ${isDark ? "text-light" : "text-dark"} md:grid-cols-6 md:pb-10 md:gap-10`}>
-      <h1 className="flex items-center font-bold text-5xl md:col-span-full md:text-7xl">
-        {title}
+    <div
+      className={`grid gap-5 pb-10 ${isDark ? "text-light" : "text-dark"} md:grid-cols-6 md:pb-10 md:gap-10`}
+    >
+      <div className="flex items-center md:col-span-full">
+        <BlurText
+          text={title}
+          delay={5}
+          animateBy="words"
+          direction="bottom"
+          className="font-bold text-5xl md:text-7xl"
+        />
         <div className="align-middle ml-5 hidden md:flex">
           <Icon variant={variant} />
         </div>
-      </h1>
+      </div>
       <div className="flex gap-5 md:col-span-2">
         <h2 className="text-2xl font-medium font-mono">({label})</h2>
         <div className="flex items-center md:hidden">
           <Icon variant={variant} />
         </div>
       </div>
-      <p text-md className="md:col-span-4 md:text-xl">{description}</p>
-
+      <p text-md className="md:col-span-4 md:text-xl">
+        {description}
+      </p>
     </div>
   );
 };

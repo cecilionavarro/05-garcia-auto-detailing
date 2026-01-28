@@ -32,6 +32,10 @@ import processImg3 from "../assets/IMG_2044.webp";
 import Card from "../components/Card";
 import CallButton from "../components/CallButton";
 import SectionBody from "../components/SectionBody";
+import BlurText from "../components/ui/BlurText";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface CardItem {
   review: String;
@@ -138,8 +142,53 @@ export const benefits = [
   },
 ];
 
-const Home = () => (
-  <div className="bg-light">
+const Home = () => {
+  const motionWordRef = useRef<HTMLHeadingElement>(null);
+  const motionArrowRef = useRef<HTMLParagraphElement>(null);
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    if (!motionWordRef.current || !motionArrowRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        motionWordRef.current,
+        { xPercent: -150 },
+        {
+          xPercent: 0,
+          ease: "none",
+          scrollTrigger: {
+            trigger: motionWordRef.current,
+            start: "top 80%",
+            end: "top 20%",
+            scrub: true,
+          },
+        }
+      );
+
+      gsap.fromTo(
+        motionArrowRef.current,
+        { rotation: 0 },
+        {
+          rotation: 90,
+          transformOrigin: "50% 50%",
+          ease: "none",
+          scrollTrigger: {
+            trigger: motionArrowRef.current,
+            start: "top 80%",
+            end: "top 20%",
+            scrub: true,
+          },
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
+  return (
+    <div className="bg-light">
     <div className="relative h-[80vh] w-full">
       <img
         src={heroImg}
@@ -151,14 +200,44 @@ const Home = () => (
           <h2 className="font-mono font-medium md:text-xl">
             IT'S ALL IN THE DETAILS
           </h2>
-          <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">GARCIA</h1>
+          <BlurText
+            text="GARCIA"
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="text-6xl font-bold md:text-8xl xl:text-9xl"
+          />
+          <BlurText
+            text="AUTO"
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="text-6xl font-bold md:text-8xl xl:text-9xl"
+          />
+          <div className="flex items-start">
+            <BlurText
+              text="DETAILING"
+              delay={5}
+              animateBy="words"
+              direction="bottom"
+              className="text-6xl font-bold md:text-8xl xl:text-9xl"
+            />
+            <BlurText
+              text="©"
+              delay={0}
+              animateBy="words"
+              direction="bottom"
+              className="text-2xl font-bold align-top relative top-1.5 md:text-4xl md:top-2 lg:text-5xl"
+            />
+          </div>
+          {/* <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">GARCIA</h1>
           <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">AUTO</h1>
           <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">
             DETAILING
             <span className="text-2xl align-top relative top-1.4 md:text-4xl md:top-1.5 lg:text-5xl">
               &copy;
             </span>
-          </h1>
+          </h1> */}
         </div>
         <div className="pt-5 lg:flex lg:flex-col lg:justify-end lg:text-right">
           <h2 className="font-mono font-medium block md:hidden">
@@ -167,9 +246,13 @@ const Home = () => (
           <h2 className="font-mono font-medium hidden md:block md:text-xl">
             AVAILABLE FOR MOBILE DETAILING WORK
           </h2>
-          <h1 className="text-4xl font-bold md:text-5xl xl:text-6xl">
-            BAKERSFIELD, CA
-          </h1>
+          <BlurText
+            text="BAKERSFIELD, CA"
+            delay={5}
+            animateBy="words"
+            direction="bottom"
+            className="text-4xl font-bold md:text-5xl xl:text-6xl lg:justify-end"
+          />
         </div>
         <div className="pt-5 block lg:hidden">
           <CallButton />
@@ -218,8 +301,16 @@ const Home = () => (
           MOBILE DETAILING IN
         </h2>
         <div className="flex justify-between">
-          <p className="text-6xl md:text-8xl lg:text-[12rem]">→</p>
-          <h1 className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]">
+          <p
+            ref={motionArrowRef}
+            className="text-6xl md:text-8xl lg:text-[12rem] inline-block"
+          >
+            →
+          </p>
+          <h1
+            ref={motionWordRef}
+            className="relative font-bold text-6xl md:text-8xl lg:text-[12rem]"
+          >
             <span className="relative text-accent">
               <em>MOTION</em>
             </span>
@@ -373,6 +464,7 @@ const Home = () => (
     <CallToAction />
     <Footer />
   </div>
-);
+  );
+};
 
 export default Home;
