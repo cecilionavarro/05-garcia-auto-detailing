@@ -32,7 +32,7 @@ const About = () => {
             end: "top 20%",
             scrub: true,
           },
-        }
+        },
       );
     });
 
@@ -123,11 +123,11 @@ const About = () => {
             <p className="md:text-xl">
               I'm proud to serve Bakersfield, but my vision is to grow—opening a
               dedicated shop, expanding services to include wraps and tint, and
-              helping even more people enjoy their vehicles. Until then, I'll keep
-              doing what I do best: delivering high-quality, professional
+              helping even more people enjoy their vehicles. Until then, I'll
+              keep doing what I do best: delivering high-quality, professional
               detailing right to your door.
             </p>
-            <CallButton/>
+            <CallButton />
           </div>
         </div>
       </Section>
