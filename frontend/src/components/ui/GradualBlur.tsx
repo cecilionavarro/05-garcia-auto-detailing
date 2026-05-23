@@ -1,11 +1,10 @@
 import React, {
-  CSSProperties,
   useEffect,
   useRef,
   useState,
-  useMemo,
-  PropsWithChildren
+  useMemo
 } from 'react';
+import type { CSSProperties, PropsWithChildren } from 'react';
 
 type Position = 'top' | 'bottom' | 'left' | 'right';
 type Curve = 'linear' | 'bezier' | 'ease-in' | 'ease-out' | 'ease-in-out';
@@ -137,7 +136,7 @@ const getGradientDirection = (position: Position): string => {
   return directions[position] || 'to bottom';
 };
 
-const debounce = <T extends (...a: any[]) => void>(fn: T, wait: number) => {
+const debounce = <T extends (...args: never[]) => void>(fn: T, wait: number) => {
   let t: ReturnType<typeof setTimeout>;
   return (...a: Parameters<T>) => {
     clearTimeout(t);
@@ -172,7 +171,7 @@ const useResponsiveDimension = <K extends ResponsiveSizeKey>(
   return responsive ? val : config[key];
 };
 
-const useIntersectionObserver = (ref: React.RefObject<HTMLDivElement>, shouldObserve: boolean = false) => {
+const useIntersectionObserver = (ref: React.RefObject<HTMLDivElement | null>, shouldObserve: boolean = false) => {
   const [isVisible, setIsVisible] = useState(!shouldObserve);
 
   useEffect(() => {
@@ -301,10 +300,15 @@ const GradualBlur: React.FC<GradualBlurProps> = props => {
   );
 };
 
-const GradualBlurMemo = React.memo(GradualBlur);
+type GradualBlurMemoComponent = React.MemoExoticComponent<React.FC<GradualBlurProps>> & {
+  PRESETS: typeof PRESETS;
+  CURVE_FUNCTIONS: typeof CURVE_FUNCTIONS;
+};
+
+const GradualBlurMemo = React.memo(GradualBlur) as GradualBlurMemoComponent;
 GradualBlurMemo.displayName = 'GradualBlur';
-(GradualBlurMemo as any).PRESETS = PRESETS;
-(GradualBlurMemo as any).CURVE_FUNCTIONS = CURVE_FUNCTIONS;
+GradualBlurMemo.PRESETS = PRESETS;
+GradualBlurMemo.CURVE_FUNCTIONS = CURVE_FUNCTIONS;
 export default GradualBlurMemo;
 
 const injectStyles = () => {

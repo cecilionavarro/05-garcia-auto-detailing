@@ -76,7 +76,9 @@ const SplitText: React.FC<SplitTextProps> = ({
       if (el._rbsplitInstance) {
         try {
           el._rbsplitInstance.revert();
-        } catch (_) {}
+        } catch {
+          // SplitText can throw if the node was already restored.
+        }
         el._rbsplitInstance = undefined;
       }
 
@@ -143,7 +145,9 @@ const SplitText: React.FC<SplitTextProps> = ({
         });
         try {
           splitInstance.revert();
-        } catch (_) {}
+        } catch {
+          // SplitText can throw if cleanup races with an already-restored node.
+        }
         el._rbsplitInstance = undefined;
       };
     },

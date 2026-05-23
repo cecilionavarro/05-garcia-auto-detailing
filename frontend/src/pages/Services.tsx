@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import CallToAction from "../components/CallToAction";
 import Faq from "../components/Faq";
 import Footer from "../components/Footer";

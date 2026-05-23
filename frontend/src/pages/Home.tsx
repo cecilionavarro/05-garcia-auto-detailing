@@ -38,8 +38,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 interface CardItem {
-  review: String;
-  name: String;
+  review: string;
+  name: string;
 }
 
 const reviews: CardItem[] = [
@@ -118,7 +118,7 @@ const services = [
   },
 ];
 
-export const benefits = [
+const benefits = [
   {
     title: "CONVENIENCE",
     label: "MOBILE DETAILING",
