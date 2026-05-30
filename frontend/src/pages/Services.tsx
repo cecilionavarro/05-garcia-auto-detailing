@@ -21,6 +21,12 @@ import img12 from "../assets/IMG_2122.webp";
 import img13 from "../assets/IMG_0389.webp";
 import img14 from "../assets/IMG_2125.webp";
 import img15 from "../assets/IMG_0501.webp";
+import img16 from "../assets/IMG_0407.webp";
+import img17 from "../assets/IMG_1492.webp";
+import img18 from "../assets/IMG_4727.webp";
+import img19 from "../assets/IMG_7783.webp";
+import img20 from "../assets/IMG_7798.webp";
+import img21 from "../assets/IMG_1549.webp";
 
 export const interiorExteriorDetail: ServiceGroup[] = [
   {
@@ -139,6 +145,43 @@ export const paintEnhancement: ServiceGroup[] = [
   },
 ];
 
+export const ceramicCoating: ServiceGroup[] = [
+  {
+    title: "PROTECTION",
+    items: [
+      "Durable long-term protection",
+      "Repels water, dirt, and grime",
+      "Protects against harsh UV rays",
+    ],
+  },
+  {
+    title: "FINISH",
+    items: [
+      "Enhances paint gloss and slickness",
+      "Super easy maintenance for great upkeep",
+    ],
+  },
+  {
+    title: "OPTIONS",
+    items: ["Ceramic options from 1-5 years"],
+  },
+];
+
+export const headlightRestoration: ServiceGroup[] = [
+  {
+    title: "RESTORATION",
+    items: [
+      "Removes oxidation and haze",
+      "Improves clarity and function",
+      "Increases car value and appearance",
+    ],
+  },
+  {
+    title: "PROTECTION",
+    items: ["Cost-effective service", "1 year protective coating"],
+  },
+];
+
 export const Services = () => {
   return (
     <div className="bg-light">
@@ -230,6 +273,35 @@ export const Services = () => {
           image2={img14}
           image3={img15}
           sections={paintEnhancement}
+        />
+      </Section>
+
+      <Section id="ceramic-coating">
+        <SectionHeader
+          title="CERAMIC COATING"
+          label="STARTING AT $350"
+          description="Durable long-term paint protection that boosts gloss, adds slickness, and makes routine maintenance easier by helping repel water, dirt, and grime."
+        />
+        <SectionBody
+          image1={img16}
+          image2={img17}
+          image3={img18}
+          sections={ceramicCoating}
+        />
+      </Section>
+
+      <Section dark id="headlight-restoration">
+        <SectionHeader
+          title="HEADLIGHT RESTORATION"
+          label="STARTING AT $80"
+          description="Restore cloudy headlights by removing oxidation and haze, improving clarity, function, and overall vehicle appearance with a protective coating included."
+          variant="dark"
+        />
+        <SectionBody
+          image1={img19}
+          image2={img20}
+          image3={img21}
+          sections={headlightRestoration}
         />
       </Section>
 

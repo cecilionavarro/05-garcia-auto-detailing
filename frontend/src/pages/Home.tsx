@@ -19,6 +19,8 @@ import serviceImg2 from "../assets/services/IMG_7818.webp";
 import serviceImg3 from "../assets/IMG_1903.webp";
 import serviceImg4 from "../assets/IMG_2120.webp";
 import serviceImg5 from "../assets/IMG_1492.webp";
+import serviceImg6 from "../assets/IMG_0407.webp";
+import serviceImg7 from "../assets/IMG_7783.webp";
 import BMWLogo from "../assets/car-logos/BMW.svg";
 import CorvetteLogo from "../assets/car-logos/Logo_Corvette_-Transparency.png";
 import MercedesLogo from "../assets/car-logos/Mercedes-Benz_Star.svg";
@@ -115,6 +117,22 @@ const services = [
       "Exterior paint enhancement with clay and iron decontamination, one-step machine polishing, and sealant for added gloss, shine, and protection.",
     image: serviceImg5,
     slug: "paint-enhancement",
+  },
+  {
+    title: "CERAMIC COATING",
+    price: 350,
+    description:
+      "Durable long-term ceramic protection that enhances gloss and slickness while repelling water, dirt, and grime for easier upkeep.",
+    image: serviceImg6,
+    slug: "ceramic-coating",
+  },
+  {
+    title: "HEADLIGHT RESTORATION",
+    price: 80,
+    description:
+      "Headlight restoration that removes oxidation and haze, improves clarity and function, and includes a 1 year protective coating.",
+    image: serviceImg7,
+    slug: "headlight-restoration",
   },
 ];
 
