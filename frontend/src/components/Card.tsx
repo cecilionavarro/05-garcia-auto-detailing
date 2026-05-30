@@ -27,7 +27,7 @@ const Card = ({ title, label, price, description, image, slug }: CardProps) => {
     //   <p className="text-xl">{description}</p>
     //   {slug && <Link
     //     to={`/services#${slug}`}
-    //     className="inline-block bg-brand text-white px-20 py-4 rounded-full hover:bg-[#ae3f40] w-fit"
+    //     className="inline-block bg-brand text-dark px-20 py-4 rounded-full hover:bg-[#C8F9FF] w-fit"
     //   >
     //     VIEW SERVICE DETAILS
     //   </Link>}
@@ -52,7 +52,7 @@ const Card = ({ title, label, price, description, image, slug }: CardProps) => {
         <p className="md:text-xl">{description}</p>
       </div>
       {slug && 
-      <Link to={`/services#${slug}`} className="inline-block bg-brand text-light px-20 py-4 rounded-full hover:bg-[#ae3f40] w-fit">VIEW SERVICE DETAILS</Link>}
+      <Link to={`/services#${slug}`} className="inline-block bg-brand text-dark px-20 py-4 rounded-full hover:bg-[#C8F9FF] w-fit">VIEW SERVICE DETAILS</Link>}
     </div>
   );
 };

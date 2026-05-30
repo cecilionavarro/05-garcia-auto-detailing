@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import myLogo from "../assets/garcias-auto-detailing-logo.png";
+import myLogo from "../assets/logo.png";
 import CallButton from "./CallButton";
 import { useEffect, useState } from "react";
 
@@ -26,11 +26,14 @@ export const Navbar = () => {
       }`}
     >
       <div className="flex justify-center py-5 md:items-center">
-        <Link to="/" className="h-13 absolute left-10 hidden md:block">
+        <Link
+          to="/"
+          className="absolute left-10 hidden h-16 w-16 overflow-hidden md:block"
+        >
           <img
             src={myLogo}
             alt="Garcia Auto Detailing"
-            className="h-full w-auto object-contain"
+            className="h-24  -translate-y-5 object-contain"
           />
         </Link>
         <nav className="flex gap-5 py-2">

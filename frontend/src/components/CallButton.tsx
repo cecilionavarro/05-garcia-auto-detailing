@@ -1,6 +1,6 @@
 const CallButton = () => {
   return (
-    <a href="tel:+16618622372" className="inline-block bg-brand text-white px-20 py-4 rounded-full hover:bg-[#ae3f40] w-fit">CALL NOW</a>
+    <a href="tel:+16618622372" className="inline-block bg-brand text-dark px-20 py-4 rounded-full hover:bg-[#C8F9FF] w-fit">CALL NOW</a>
   )
 }
 
