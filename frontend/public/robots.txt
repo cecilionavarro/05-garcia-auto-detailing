@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# AI search and retrieval bots — explicitly permitted
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Sitemap
+Sitemap: https://www.detailod.com/sitemap.xml
+
+# AI-readable index
+# llms.txt: https://www.detailod.com/llms.txt

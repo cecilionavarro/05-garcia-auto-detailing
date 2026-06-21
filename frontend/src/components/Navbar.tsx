@@ -32,7 +32,7 @@ export const Navbar = () => {
         >
           <img
             src={myLogo}
-            alt="Garcia Auto Detailing"
+            alt="On Demand Detailing"
             className="h-24  -translate-y-5 object-contain"
           />
         </Link>

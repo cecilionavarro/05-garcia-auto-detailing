@@ -5,6 +5,8 @@ import { FaFacebookF } from "react-icons/fa";
 
 import ScrollVelocity from "../components/ui/ScrollVelocity";
 
+const currentYear = new Date().getFullYear();
+
 const Footer = () => {
   return (
     <div>
@@ -90,7 +92,7 @@ const Footer = () => {
         {/* <div className="col-span-full flex flex-row items-center justify-center pt-20">
           <Icon />
           <BlurText
-            text="© 2025 Garcia Auto Detailing"
+            text={`© ${currentYear} On Demand Detailing`}
             delay={5}
             animateBy="words"
             direction="bottom"
@@ -99,7 +101,7 @@ const Footer = () => {
         </div> */}
       </div>
       <ScrollVelocity
-          texts={["© 2025 Garcia Auto Detailing","Garcia Auto Detailing © 2025 "]}
+          texts={[`© ${currentYear} On Demand Detailing`, `On Demand Detailing © ${currentYear} `]}
           velocity={5}
           className="custom-scroll-text pb-2"
         />

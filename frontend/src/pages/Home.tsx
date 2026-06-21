@@ -219,14 +219,14 @@ const Home = () => {
             IT'S ALL IN THE DETAILS
           </h2>
           <BlurText
-            text="GARCIA"
+            text="ON"
             delay={50}
             animateBy="letters"
             direction="bottom"
             className="text-6xl font-bold md:text-8xl xl:text-9xl"
           />
           <BlurText
-            text="AUTO"
+            text="DEMAND"
             delay={50}
             animateBy="letters"
             direction="bottom"
@@ -248,8 +248,7 @@ const Home = () => {
               className="text-2xl font-bold align-top relative top-1.5 md:text-4xl md:top-2 lg:text-5xl"
             />
           </div>
-          {/* <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">GARCIA</h1>
-          <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">AUTO</h1>
+          {/* <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">ON DEMAND</h1>
           <h1 className="text-6xl font-bold md:text-8xl xl:text-9xl">
             DETAILING
             <span className="text-2xl align-top relative top-1.4 md:text-4xl md:top-1.5 lg:text-5xl">
