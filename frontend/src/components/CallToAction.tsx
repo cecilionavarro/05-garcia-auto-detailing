@@ -33,10 +33,10 @@ const CallToAction = () => {
           <div>
             <h3 className="font-bold md:text-right">FOR FURTHER INQUIRIES</h3>
             <a
-              href="mailto:garciadetails84@gmail.com"
+              href="mailto:ondemanddetailinginc@gmail.com"
               className="font-mono text-right hover:text-accent"
             >
-               ⮡ garciadetails84@gmail.com
+               ⮡ ondemanddetailinginc@gmail.com
             </a>
           </div>
         </div>

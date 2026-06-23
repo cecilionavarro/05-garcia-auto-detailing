@@ -10,7 +10,7 @@
 On Demand Detailing is a mobile auto detailing service based in Bakersfield, CA. Owner and operator Brian Garcia comes to your location — home, office, or wherever your vehicle is parked — to provide professional detailing without requiring a drop-off.
 
 **Phone:** (661) 862-2372
-**Email:** garciadetails84@gmail.com
+**Email:** ondemanddetailinginc@gmail.com
 **Service area:** Bakersfield, CA
 
 ---
@@ -115,5 +115,5 @@ Yes — Brian does a walkthrough before leaving and will fix touch-ups on the sp
 ## Book Now
 
 Call or text: **(661) 862-2372**
-Email: garciadetails84@gmail.com
+Email: ondemanddetailinginc@gmail.com
 Website: https://www.detailod.com

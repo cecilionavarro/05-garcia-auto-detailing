@@ -17,10 +17,10 @@ const Footer = () => {
             661 862 2372
           </a>
           <a
-            href="mailto:garciadetails84@gmail.com"
+            href="mailto:ondemanddetailinginc@gmail.com"
             className="hover:text-accent"
           >
-            garciadetails84@gmail.com
+            ondemanddetailinginc@gmail.com
           </a>
           <div className="-ml-1 flex gap-2">
             <a

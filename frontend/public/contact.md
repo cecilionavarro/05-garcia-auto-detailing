@@ -10,7 +10,7 @@
 **Business:** On Demand Detailing
 **Owner:** Brian Garcia
 **Phone:** (661) 862-2372
-**Email:** garciadetails84@gmail.com
+**Email:** ondemanddetailinginc@gmail.com
 **Website:** https://www.detailod.com
 **Service area:** Bakersfield, CA (mobile — Brian comes to you)
 

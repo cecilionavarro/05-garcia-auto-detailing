@@ -168,5 +168,5 @@ Yes — Brian does a walkthrough before leaving and will fix touch-ups on the sp
 ## Book a Service
 
 Call or text: **(661) 862-2372**
-Email: garciadetails84@gmail.com
+Email: ondemanddetailinginc@gmail.com
 Website: https://www.detailod.com/services
